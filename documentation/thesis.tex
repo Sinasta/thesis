@@ -1,0 +1,442 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[top=2.0cm, bottom=2.0cm, left=3.5cm, right=3.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage[hidelinks]{hyperref}
+\usepackage{glossaries}
+\usepackage{parskip}
+\usepackage{lipsum}
+\usepackage[pages=some]{background}
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\thebibliography}{%
+  \chapter*{\bibname}\@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}}{%
+  \section{Bibliography}}{}{}
+\makeatother
+
+
+\begin{document}
+
+\title{\fontsize{60}{50}\selectfont GRAPH THEORY APPLIED IN ARCHITECTURE}
+\author{\fontsize{30}{13}\selectfont Raban Ohlhoff}
+\date{\today}
+
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=0.4,
+angle=0,
+contents={
+  \includegraphics[width=\paperwidth, height=\paperheight]{assets/cover.pdf}
+  }
+}
+
+\BgThispage
+\maketitle
+\clearpage
+
+\tableofcontents
+
+\begin{abstract}
+This work is divided into two overlapping parts. First, the application of graph-theoretical concepts in architecture is explored, followed by an explanation of the experimental phase concerning the concrete application of graph classification in an architectural-analytical context. This work is situated at the intersection of architectural theory and data science and thus aims to integrate the application of mathematical and computer science concepts and methods in an advantageous way in the architectural context in order to question traditional processes and possibly demonstrate suggestions for improvement.\\
+
+To introduce the experimental part in a meaningful way, theoretical concepts of graph theory as well as terms like topologies and space syntax are explained and their meaning for conventional architecture is discussed. The focus is primarily on conceptual and theoretical aspects. A detailed explanation of the various application methods of the introduced concepts with respect to architectural examples is followed by a thorough analysis of two examples of architectural theory. The focus is on demonstrating the importance of graph-theoretical concepts as well as topological analysis in the conceptual framework.\\
+
+The second part of this thesis documents the complete process from dataset generation over training to the application of an energy performance based graphclassifications model. It starts with the documentation of the generation of the architectural synthetic dataset. It will be explained which algorithms have been used for successful space partitioning, what are the different advantages and disadvantages of their application and how they are integrated into a parametric framework for automatic floorplan generation. Next, defined rules and architectural requirements for the properties of each object in the dataset are explained, followed by the simulation and mapping phase. Finally, the structure of the classification model is explained and its accuracy is evaluated after the training phase.\\
+
+The work ends in a detailed discussion of the obtained results with a focus on the evaluation of the usefulness of the presented method in the field of traditional architecture and what role the graph classification can play with respect to the different project and conceptual phases.\\
+
+\end{abstract}
+
+\part[Topological Graphs in Architecture]{Topological Graphs in Architecture\\ \huge{\textit{exploration}}}
+
+\backgroundsetup{contents={
+\includegraphics[width=\paperwidth, height=\paperheight]{assets/cover.pdf}
+}}\newpage \ \BgThispage\newpage\clearpage
+
+    \chapter{Introduction}
+
+        \lipsum[3-8]
+
+        \section{Graphs}
+
+            \lipsum[10-17]
+            
+            \subsection{Properties}
+
+                \lipsum[11-13]
+                
+            \subsection{Applications}
+
+                \lipsum[11-13]
+
+        \section{Topology}
+
+            \lipsum[14-17]
+
+            \subsection{Properties}
+
+                \lipsum[8-10]
+                
+            \subsection{Geometry}
+
+                \lipsum[8-10]
+
+        \section{Space Syntax}
+
+            \lipsum[14-17]
+
+            \subsection{Grammar}
+
+                \lipsum[8-10]
+                
+            \subsection{Patterns}
+
+                \lipsum[8-10]
+
+    \backgroundsetup{contents={
+    \includegraphics[width=\paperwidth, height=\paperheight]{assets/cover.pdf}
+    }}\newpage \ \BgThispage\newpage\clearpage
+
+    \chapter{Applications}
+
+        \lipsum[2-10]
+
+        \section{Methods}
+
+            \lipsum[6-8]
+            
+            \subsection{Models}
+
+                \lipsum[6-8]
+                
+            \subsection{Space Systems}
+
+                \lipsum[6-8]
+                
+            \subsection{Relationships}
+
+                \lipsum[6-8]
+                
+            \subsection{Path Analysis}
+
+                \lipsum[6-8]
+                
+            \subsection{Properties}
+
+                \lipsum[6-8]
+                
+                \subsubsection{Nodes}
+                
+                    \lipsum[6-8]
+                 
+                \subsubsection{Edges}
+                
+                    \lipsum[6-8]
+                
+                \subsubsection{Graphs}
+                
+                    \lipsum[6-8]
+
+            \subsection{Fields}
+
+                \lipsum[6-8]
+                
+            \subsection{Algorithms}
+
+                \lipsum[6-8]
+
+        \section{State of the Art}
+
+            \lipsum[9-17]
+            
+            \subsection{Past}
+
+                \lipsum[6-8]
+                
+            \subsection{Present}
+
+                \lipsum[6-8]
+                
+                \subsubsection{Data Science}
+            
+                    \lipsum[6-8]
+                
+            \subsection{Future}
+
+                \lipsum[6-8]
+            
+    \chapter{Case Study}
+
+        \lipsum[2-10]
+
+        \section{Project I}
+
+            \lipsum[6-8]
+            
+            \subsection{Topology}
+
+                \lipsum[6-8]
+                
+            \subsection{Graph}
+
+                \lipsum[6-8]
+                
+            \subsection{Analysis}
+
+                \lipsum[6-8]
+
+        \section{Project II}
+
+            \lipsum[9-17]
+            
+            \subsection{Topology}
+
+                \lipsum[6-8]
+                
+            \subsection{Graph}
+
+                \lipsum[6-8]
+                
+            \subsection{Analysis}
+
+                \lipsum[6-8]
+
+
+\part[Analytical Graph Classification]{Analytical Graph Classification\\ \huge{\textit{experimentation}}}
+
+\backgroundsetup{contents={
+\includegraphics[width=\paperwidth, height=\paperheight]{assets/cover.pdf}
+}}\newpage \ \BgThispage\newpage\clearpage
+
+\chapter{Introduction}
+
+    \lipsum[3-8]
+
+    \section{Graphs in Datascience}
+
+        \lipsum[10-17]
+            
+        \subsection{Classification}
+
+            \lipsum[8-12]
+
+    \section{Data}
+
+        \lipsum[14-17]
+
+        \subsection{Datasets}
+
+            \lipsum[8-12]
+            
+        \subsection{Annotation}
+
+            \lipsum[8-12]
+            
+    \section{Architectural Analysis}
+
+        \lipsum[14-17]
+
+        \subsection{Simulation}
+
+            \lipsum[11-17]
+
+\chapter{Experimentation}
+
+    \lipsum[2-10]
+
+    \section{Synthetic Dataset}
+
+        \lipsum[6-8]
+        
+        \subsubsection{Algorithms}
+        
+            \lipsum[6-8]
+            
+            \paragraph{Recursive Subdivision}
+        
+                \lipsum[6-8]
+                
+                \subparagraph{Bent Bisection}
+                
+                    \lipsum[6-8]
+                    
+                \subparagraph{Quad Division}
+                
+                    \lipsum[6-8]
+                    
+                \subparagraph{Dual Graph}
+                
+                    \lipsum[6-8]
+                
+            \paragraph{K-Dimensional Tree}
+        
+                \lipsum[6-8]
+                
+                \subparagraph{Binary Tree}
+                
+                    \lipsum[6-8]
+                    
+                \subparagraph{Point Cloud}
+                
+                    \lipsum[6-8]
+                
+            \paragraph{Convex Hull}
+        
+                \lipsum[6-8]
+                
+                \subparagraph{Orthogonal Hull}
+                
+                    \lipsum[6-8]
+                
+            \paragraph{Voronoi Diagram}
+        
+                \lipsum[6-8]
+                
+                \subparagraph{Delaunay Triangulation}
+                
+                    \lipsum[6-8]
+                    
+                \subparagraph{Lloyd's Algorithm}
+                
+                    \lipsum[6-8]
+                    
+                \subparagraph{Laguerre Voronoi}
+                
+                    \lipsum[6-8]
+                    
+                \subparagraph{Orthogonal Voronoi}
+                
+                    \lipsum[6-8]
+                
+            \paragraph{Physics Solver}
+        
+                \lipsum[6-8]
+                
+                \subparagraph{Force Attraction}
+                
+                    \lipsum[6-8]
+                
+            \paragraph{Genetic Algorithm}
+        
+                \lipsum[6-8]
+                
+                \subparagraph{Distance Fitness Function}
+                
+                    \lipsum[6-8]
+                    
+                \subparagraph{Optimization}
+                
+                    \lipsum[6-8]
+                
+            \paragraph{Shape Grammar}
+        
+                \lipsum[6-8]
+                
+                \subparagraph{Topologic}
+                
+                    \lipsum[6-8]
+                    
+                \subparagraph{Shape Rules}
+                
+                    \lipsum[6-8]
+
+    \section{Data Enhancement}
+
+        \lipsum[9-17]
+        
+        \subsubsection{Energy Performance}
+        
+            \lipsum[6-8]
+
+        \subsubsection{Simulation}
+        
+            \lipsum[6-8]
+            
+        \subsubsection{Mapping}
+        
+            \lipsum[6-8]
+            
+    \section{Training}
+    
+        \lipsum[9-17]
+        
+        \subsection{Model Setup}
+    
+            \lipsum[9-17]
+
+        \subsection{Calssification}
+    
+            \lipsum[9-17]
+        
+\chapter{Results}
+
+    \lipsum[2-10]
+    
+    \section{Accuracy}
+
+        \lipsum[6-8]
+
+    \section{Comparison}
+
+        \lipsum[6-8]
+
+    \section{Interpretation}
+
+        \lipsum[9-17]
+        
+\chapter{Discussion}
+
+    \lipsum[2-10]
+
+    \section{Critic}
+
+        \lipsum[6-8]
+
+    \section{Potential}
+
+        \lipsum[6-8]
+
+    \section{Future Work}
+
+        \lipsum[9-17]
+        
+\part{Appendix}
+
+\backgroundsetup{contents={
+\includegraphics[width=\paperwidth, height=\paperheight]{assets/cover.pdf}
+}}\newpage \ \BgThispage\newpage\clearpage
+
+\chapter{Additional Content}
+
+    \lipsum[2-10]
+
+\chapter{Used Software}
+
+    \lipsum[2-10]
+    
+\section{Acknowledgements}
+
+    \lipsum[2-10]
+
+\section{Iconography}
+
+    \lipsum[2-10]
+
+\bibliography{bibliography}
+\bibliographystyle{plain}
+\nocite{*}
+
+\end{document}

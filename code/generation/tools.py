@@ -92,11 +92,11 @@ def draw(geometry, width=400, height=400, show=True, export=False, name='export.
         geometry,
         faceColor='lightseagreen',
         faceOpacity=0.3,
-        wireColor='white',
-        wireWidth=4,
+        edgeColor='white',
+        edgeWidth=4,
         vertexColor='white',
         vertexSize=2.0,
-        drawFaces=True
+        showFaces=True
     )
 
     fig = Plotly.FigureByData(

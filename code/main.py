@@ -4,8 +4,10 @@ from generation.algorithms.treemap import *
 from generation.algorithms.voronoi_treemap import *
 from generation.algorithms.voronoi import *
 
-def main(amount:int = 2, seed:int = None):
-    for i in range(1, amount):
+from energy.add_apertures_energy_sim import *
+
+def main(amount:int = 1, seed:int = None):
+    for i in range(1, amount + 1):
         if seed:
             seed += 1 + i
         else:
@@ -19,7 +21,10 @@ def main(amount:int = 2, seed:int = None):
         layout, layout_type = pick_layout_method(seed, outline, ratio_tree_dict)
         layout = add_room_names(layout, names_sorted)
         check_if_layout_good(layout)
-        print(draw(layout, show=False, export=True, name=str(seed) + '.png'))
+#        print(draw(layout, show=False, export=True, name=str(seed) + '.png'))
+        
+        ccomplex_database = add_apertures_energy_sim(layout)
+        print(ccomplex_database)
 
 if __name__ == "__main__":
     main()
