@@ -11,6 +11,8 @@ from topologicpy.Face import Face
 import numpy as np
 import os
 import sys
+import json
+import tempfile
 
 def energy_simulation(Apartment, name):
     directory = os.getcwd()
@@ -31,7 +33,8 @@ def energy_simulation(Apartment, name):
         osModelPath, weatherFilePath, designDayFilePath, buildingTopology,
         shadingSurfaces, floorLevels, buildingName, buildingType, defaultSpaceType,
         northAxis, glazingRatio, coolingTemp, heatingTemp, 'type', 'ep_type')
-    sim_model = EnergyModel.EnergyModelRunSimulation(energy_model, weatherFilePath, directory + '/energy/openstudio/bin/openstudio', '/tmp', True)
+    tmp = tempfile.TemporaryDirectory()
+    sim_model = EnergyModel.EnergyModelRunSimulation(energy_model, weatherFilePath, directory + '/energy/openstudio/bin/openstudio', tmp.name, True)
     EPReportName = [
         'AnnualBuildingUtilityPerformanceSummary',
         'AnnualBuildingUtilityPerformanceSummary',
@@ -230,9 +233,17 @@ def energy_simulation(Apartment, name):
     ccomplex_sim_dictionary = Dictionary.ByKeysValues(dict_names, sim_values)
     ccomplex_merged_dicts = Dictionary.ByMergedDictionaries([ccomplex_dictionary, ccomplex_sim_dictionary])
     ccomplex_with_dicts = Topology.SetDictionary(Apartment, ccomplex_merged_dicts)
+    tmp.cleanup()
     return ccomplex_with_dicts
     
 def add_apertures_energy_sim(shell):
+
+    with open('./graph/quantiles_dict.json', 'r') as qd:
+        quantiles_dict = json.load(qd)
+        
+    with open('./graph/conversion_list.json', 'r') as cl:
+        conversion_list = json.load(cl)
+
     total_area = 0
     room_names = []
     cells = []
@@ -243,7 +254,27 @@ def add_apertures_energy_sim(shell):
         surface = Face.Area(face, 4)
         total_area += surface
         ep_type_name = room_name[:-2].capitalize()
-        dicts = Dictionary.ByKeysValues(['id', 'area', 'element', 'ep_type', 'type'], [index, surface, 'room', ep_type_name, room_name])
+        
+        function = ep_type_name.lower()
+        quantile_list = quantiles_dict[function]
+        if surface <= quantile_list[0]:
+            size_string = 'xxs'
+        elif surface <= quantile_list[1]:
+            size_string = 'xs'
+        elif surface <= quantile_list[2]:
+            size_string = 's'
+        elif surface <= quantile_list[3]:
+            size_string = 'm'
+        elif surface <= quantile_list[4]:
+            size_string = 'l'
+        elif surface <= quantile_list[5]:
+            size_string = 'xl'
+        elif surface > quantile_list[5]:
+            size_string = 'xxl'
+        label_string = function + '_' + size_string
+        label = conversion_list.index(label_string)
+        
+        dicts = Dictionary.ByKeysValues(['id', 'area', 'element', 'ep_type', 'type', 'label'], [index, surface, 'room', ep_type_name, room_name, label])
         cell_with_dicts = Topology.SetDictionary(cell, dicts)
         cells.append(cell_with_dicts)
 
@@ -309,9 +340,28 @@ def add_apertures_energy_sim(shell):
                     orientation_name = 'w'
                 elif degree >= 292.5 and degree < 337.5:
                     orientation_name = 'nw'
+                    
+                quantile_list = quantiles_dict['window']
+                if surface <= quantile_list[0]:
+                    size_string = 'xxs'
+                elif surface <= quantile_list[1]:
+                    size_string = 'xs'
+                elif surface <= quantile_list[2]:
+                    size_string = 's'
+                elif surface <= quantile_list[3]:
+                    size_string = 'm'
+                elif surface <= quantile_list[4]:
+                    size_string = 'l'
+                elif surface <= quantile_list[5]:
+                    size_string = 'xl'
+                elif surface > quantile_list[5]:
+                    size_string = 'xxl'
+                label_string = 'window_' + size_string + '_' + orientation_name
+                label = conversion_list.index(label_string)
+                
                 window_dict = Dictionary.ByKeysValues(
-                    ['id', 'area', 'type', 'element', 'orientation'],
-                    [index, surface, 'exterior', 'window', orientation_name])
+                    ['id', 'area', 'type', 'element', 'orientation', 'label'],
+                    [index, surface, 'exterior', 'window', orientation_name, label])
                 window = Topology.SetDictionary(window, window_dict)
                 windows_with_dicts.append(window)
 
