@@ -1,2 +1,4 @@
 /resources
 /code/energy/openstudio
+/code/graph/data/graph_batches
+/code/graph/data/graph_dataset

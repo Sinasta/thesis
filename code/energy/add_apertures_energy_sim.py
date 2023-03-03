@@ -1,6 +1,7 @@
 import topologicpy
 import topologic
 
+from topologicpy.Graph import Graph
 from topologicpy.EnergyModel import EnergyModel
 from topologicpy.Topology import Topology
 from topologicpy.Dictionary import Dictionary
@@ -13,6 +14,10 @@ import os
 import sys
 import json
 import tempfile
+from tqdm.auto import tqdm
+
+def energy_to_class(energy_consumption, energy_quantiles):
+    return next((i for i, q in enumerate(energy_quantiles) if energy_consumption <= q), len(energy_quantiles))
 
 def energy_simulation(Apartment, name):
     directory = os.getcwd()
@@ -285,11 +290,11 @@ def add_apertures_energy_sim(shell):
             rotated_cells = [Topology.Rotate(cell, topology_center, x=0, y=0, z=1, degree=rotation) for cell in cells]
             cellcomplex_variants[str(rotation)] = CellComplex.ByCells(rotated_cells)
 
-    for i, rotation in enumerate(cellcomplex_variants):
+    for i, rotation in enumerate(tqdm(cellcomplex_variants, desc='rotations', leave=False)):
         ccomplex = cellcomplex_variants[rotation]
         extFaces = CellComplex.Decompose(ccomplex)['externalVerticalFaces']
         ccomplex_list = []
-        for f in range(4):
+        for f in tqdm(range(4), desc='variants', leave=False):
             windows_one_direction = []
             windows_other_direction = []
             for t, face in enumerate(extFaces):
@@ -372,6 +377,10 @@ def add_apertures_energy_sim(shell):
                 [id_str, room_names, len(room_names), total_area, 'apartment'])
             ccomplex_with_apertures_dict = Topology.AddDictionary(ccomplex_with_apertures, ccopmlex_dict)
             ccomplex_with_sim_results = energy_simulation(ccomplex_with_apertures_dict, id_str)
-            ccomplex_list.append(ccomplex_with_sim_results)
+            graph = Graph.ByTopology(ccomplex_with_sim_results, toExteriorApertures=True, useInternalVertex=False)
+            ccdict = Dictionary.PythonDictionary(Topology.Dictionary(ccomplex_with_sim_results))
+            consumption = ccdict['total_site_energy_consumption_per_surface_MJ/m2']
+            energy_class = energy_to_class(consumption, quantiles_dict['energy'])
+            ccomplex_list.append((ccomplex_with_sim_results, graph, energy_class))
         cellcomplex_variants[rotation] = ccomplex_list
     return cellcomplex_variants

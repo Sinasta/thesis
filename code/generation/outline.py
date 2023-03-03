@@ -59,24 +59,24 @@ def generate_outline_polygon(seed:int = None):
         polygon = Face.ByVertices(points)
         
         area = Face.Area(polygon)
-        box = Face.BoundingRectangle(polygon, optimize=10)
+        box = Face.BoundingRectangle(polygon, optimize=4)
         edges = Face.Edges(box)
         sizes = [Edge.Length(edges[0]), Edge.Length(edges[1])]
         ratio = min(sizes) / max(sizes)
         if seed:
-            seed += np.random.randint(1000)
+            seed += np.random.randint(9**5)
     return polygon
     
 def generate_outline_rectangle(seed:int = None) -> topologic.Face:
     area = ratio = 0
     while (area < 27.5 or area > 136.5) or ratio < 0.7:
         np.random.seed(seed)
-        sizes = np.random.uniform(4, 19, 2)
+        sizes = np.random.uniform(4, 19, 2).tolist()
         rectangle = Face.Rectangle(width=sizes[0], length=sizes[1])
         area = Face.Area(rectangle)
         ratio = min(sizes) / max(sizes)
         if seed:
-            seed += np.random.randint(1000)
+            seed += np.random.randint(9**5)
     return rectangle
     
 def generate_outline_square(seed:int = None) -> topologic.Face:

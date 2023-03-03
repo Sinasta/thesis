@@ -87,46 +87,6 @@ def build_tree_list(percentages_list: list, seed:int)  -> dict:
         ratio_tree_dict[level_name] = child_list
     return ratio_tree_dict
     
-def draw(geometry, width=400, height=400, show=True, export=False, name='export.png'):
-    data = Plotly.DataByTopology(
-        geometry,
-        faceColor='lightseagreen',
-        faceOpacity=0.3,
-        edgeColor='white',
-        edgeWidth=4,
-        vertexColor='white',
-        vertexSize=2.0,
-        showFaces=True
-    )
-
-    fig = Plotly.FigureByData(
-        data,
-        width=width,
-        height=height,
-        xAxis=False,
-        yAxis=False,
-        zAxis=False
-    )
-
-    fig_cam = Plotly.SetCamera(
-        fig,
-        camera=[0, 0, 5],
-        target=[0, 0, 0],
-        up=[0, 1, 0]
-    )
-    if show:
-        Plotly.Show(fig_cam, renderer='notebook')
-    
-    if export:
-        success = Plotly.ExportToImage(
-            fig_cam,
-            './generation/export/' + name,
-            format=name.split('.')[1],
-            width=str(width),
-            height=str(height))
-        return success
-    return
-    
 def check_if_layout_good(shell):
     face_list = Shell.Faces(shell)
     for face in face_list:
