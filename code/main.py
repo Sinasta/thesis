@@ -13,6 +13,7 @@ import topologic
 
 from topologicpy.DGL import DGL
 from topologicpy.Plotly import Plotly
+import pandas as pd
 
 def main(amount, seed = 1):
     for frame in tqdm(range(amount), desc='computing graphs'):
@@ -42,27 +43,45 @@ def main(amount, seed = 1):
                 done = False
                 seed += 1
         save_graph_batch(ccomplex_database, str(frame))
-    dataset = build_dataset(amount)
-    results = train(dataset, batch_size=50, epochs=100, lr=0.01, split=0.2)
+        save_geometry_batch(ccomplex_database, str(frame))
+    unbalanced_dataset = build_dataset(amount)
+    dataset = DGL.BalanceDataset(unbalanced_dataset, unbalanced_dataset.labels.tolist(), method="undersampling")
+    results = train(dataset, batch_size=50, epochs=100, lr=0.01, split=0.2, lr_decay=0.9)
     return results, dataset
 
 if __name__ == "__main__":
     results, dataset = main(amount=int(input('amount: ')))
-    
-    DGL.Show(results,
-             labels=['Epochs', 'Training Accuracy', 'Testing Accuracy', 'Training Loss', 'Testing Loss'],
-             title='Results',
-             x_title='Epoch',
-             x_spacing=1.0,
-             y_title='',
-             y_spacing=0.1,
-             use_markers=False,
-             chart_type='Line',
-             renderer='browser')
-    dist = DGL.CategoryDistribution(labels=dataset.labels.tolist(), categories=None, mantissa=4)
-    pie = Plotly.FigureByPieChart(dist['ratios'][0], dist['categories'][0])
-    Plotly.Show(pie, camera=[0, 0, 4], renderer='browser', target=[0, 0, 0], up=[0, 1, 0])
-    classifier = DGL.ClassifierBypath('./graph/data/classifier/classifier.pt')
+    loss_fig = DGL.Show(results, labels=['Epochs', 'Training Loss', 'Testing Loss'], title='Loss', x_title='Epoch', y_title='Loss', renderer='browser')
+    Plotly.ExportToImage(loss_fig, './graph/data/results/loss.svg', format='svg', width='1280', height='720')
+    acc_fig = DGL.Show(results, labels=['Epochs', 'Training Accuracy', 'Testing Accuracy'], title='Accuracy', x_title='Epoch', y_title='Accuracy', renderer='browser')
+    Plotly.ExportToImage(acc_fig, './graph/data/results/accuracy.svg', format='svg', width='1280', height='720')
+    labels = dataset.labels.tolist()
+    #dist = DGL.CategoryDistribution(labels, categories=None, mantissa=4)
+    #dist_fig = Plotly.FigureByPieChart(dist['ratios'][0], dist['categories'][0])
+    #Plotly.Show(dist_fig, renderer='browser')
+    #Plotly.ExportToImage(dist_fig, './graph/data/results/distribution.svg', format='svg', width='1280', height='720')
+    classifier = DGL.ClassifierByFilePath('./graph/data/classifier/classifier.pt')
     predicted = DGL.Predict(dataset, classifier)['labels']
-    cm = Plotly.FigureByConfusionMatrix(DGL.ConfusionMatrix(dataset.labels.tolist(), predicted, list(range(5))), list(range(5)))
-    Plotly.Show(cm, camera=[0, 0, 4], renderer='browser', target=[0, 0, 0], up=[0, 1, 0])
+    cm = DGL.ConfusionMatrix(labels, predicted, normalize=True)
+    cm_fig = Plotly.FigureByConfusionMatrix(cm, list(range(5)), showScale=False)
+    Plotly.Show(cm_fig, renderer='browser')
+    Plotly.ExportToImage(cm_fig, './graph/data/results/confusion_matrix.svg', format='svg', width='1280', height='720')
+    accuracy = DGL.Accuracy(labels, predicted)
+    #print('Duration: ', results['Duration'][0])
+    #print('Optimizer: ', results['Optimizer'][0])
+    #print('CV Type: ', results['CV Type'][0])
+    #print('Split: ', results['Split'][0])
+    #print('K-Folds: ', results['K-Folds'][0])
+    #print('HL Widths: ', results['HL Widths'][0][0])
+    #print('Conv Layer Type: ', results['Conv Layer Type'][0])
+    #print('Pooling: ', results['Pooling'][0])
+    #print('Learning Rate: ', results['Learning Rate'][0])
+    #print('Batch Size: ', results['Batch Size'][0])
+    #print('Accuracy: ', accuracy['accuracy'])
+    #print('Size: ', accuracy['size'])
+    #print('Correct: ', accuracy['correct'])
+    #print('Wrong: ', accuracy['wrong'])
+    df = pd.DataFrame([accuracy['size'], accuracy['correct'], accuracy['wrong']], ['Size', 'Correct', 'Wrong'], ['Metric'])
+    acc_info_fig = Plotly.FigureByDataFrame(df, labels=['Metric', 'Size', 'Correct', 'Wrong'], title='Accuracy: ' + str(accuracy['accuracy']), x_title='Amount', x_spacing=200.0, y_title='', chart_type='Bar')
+    Plotly.Show(acc_info_fig, renderer='browser')
+    Plotly.ExportToImage(acc_info_fig, './graph/data/results/accuracy_info.svg', format='svg', width='1280', height='720')

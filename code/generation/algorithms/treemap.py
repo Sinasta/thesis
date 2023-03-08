@@ -33,7 +33,7 @@ def create_cutline(position:float, direction:str) -> topologic.Face:
         dirX = 1
         dirY = 0
     origin = Vertex.ByCoordinates(*point)
-    section_plane = Face.Rectangle(origin=origin, width=1.0, length=30, dirX=dirX, dirY=dirY, dirZ=0)
+    section_plane = Face.Rectangle(origin=origin, width=1.0, length=30, direction=[dirX, dirY, 0])
     return section_plane
     
 def split_polygon(polygon:topologic.Face, section_plane:topologic.Face) -> list:

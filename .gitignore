@@ -2,3 +2,5 @@
 /code/energy/openstudio
 /code/graph/data/graph_batches
 /code/graph/data/graph_dataset
+/code/graph/data/geometry
+/code/graph/data/results

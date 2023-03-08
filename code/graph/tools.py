@@ -48,9 +48,23 @@ def build_dataset(amount):
     save_graphs('./graph/data/graph_dataset/graph_dataset.bin', dgl_graphs, {'label': torch.tensor(graph_labels)})
     return dataset
     
-def train(dataset, batch_size=50, epochs=100, lr=0.01, cv_type='Holdout', split=0.2, k_folds=5, hl_widths=[32], conv_layer_type='GraphConv', pooling='AvgPooling', use_gpu=False, loss_function='Cross Entropy'):
+def train(
+    dataset,
+    batch_size=50,
+    epochs=100,
+    lr=0.01,
+    cv_type='Holdout',
+    split=0.2,
+    k_folds=5,
+    hl_widths=[32],
+    conv_layer_type='GraphConv',
+    pooling='AvgPooling',
+    use_gpu=False,
+    loss_function='Cross Entropy',
+    optimizer='Adam',
+    lr_decay=0.0):
     hyper_param = DGL.Hyperparameters(
-        DGL.Optimizer(lr=0.01),
+        DGL.Optimizer(name=optimizer, amsgrad=True, betas=(0.9, 0.999), eps=1e-06, lr=lr, maximize=False, weightDecay=0.0, rho=0.9, lr_decay=lr_decay),
         cv_type,
         split,
         k_folds,

@@ -12,6 +12,8 @@ from topologicpy.Face import Face
 import numpy as np
 import os
 import sys
+import zipfile
+import pathlib
 import json
 import tempfile
 from tqdm.auto import tqdm
@@ -380,7 +382,23 @@ def add_apertures_energy_sim(shell):
             graph = Graph.ByTopology(ccomplex_with_sim_results, toExteriorApertures=True, useInternalVertex=False)
             ccdict = Dictionary.PythonDictionary(Topology.Dictionary(ccomplex_with_sim_results))
             consumption = ccdict['total_site_energy_consumption_per_surface_MJ/m2']
-            energy_class = energy_to_class(consumption, quantiles_dict['energy'])
+            energy_class = round((energy_to_class(consumption, quantiles_dict['energy']) / 9) * 4)
             ccomplex_list.append((ccomplex_with_sim_results, graph, energy_class))
         cellcomplex_variants[rotation] = ccomplex_list
     return cellcomplex_variants
+    
+def save_geometry_batch(ccomplex_database, name):
+    tmp = tempfile.TemporaryDirectory()
+    geometry_batch_path = os.path.join(tmp.name, name)
+    os.mkdir(geometry_batch_path)
+    for rotation, ccomplex_variant_list in enumerate(ccomplex_database.values()):
+        rotation_path = os.path.join(geometry_batch_path, str(rotation))
+        os.mkdir(rotation_path)
+        for variant, ccomplex_tuple in enumerate(ccomplex_variant_list):
+            Topology.ExportToJSONMK1(ccomplex_tuple[0], os.path.join(rotation_path, (str(variant) + '.json') ), overwrite=True)
+    directory = pathlib.Path(geometry_batch_path)
+    zip_path_name = './graph/data/geometry/geometry_batch_' + name + '.zip'
+    with zipfile.ZipFile(zip_path_name,'w', zipfile.ZIP_DEFLATED) as zip:
+            for file_path in directory.rglob("*"):
+                zip.write(file_path, arcname=file_path.relative_to(directory))
+    tmp.cleanup()
