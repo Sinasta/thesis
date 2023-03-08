@@ -382,7 +382,7 @@ def add_apertures_energy_sim(shell):
             graph = Graph.ByTopology(ccomplex_with_sim_results, toExteriorApertures=True, useInternalVertex=False)
             ccdict = Dictionary.PythonDictionary(Topology.Dictionary(ccomplex_with_sim_results))
             consumption = ccdict['total_site_energy_consumption_per_surface_MJ/m2']
-            energy_class = round((energy_to_class(consumption, quantiles_dict['energy']) / 9) * 4)
+            energy_class = energy_to_class(consumption, quantiles_dict['energy'])
             ccomplex_list.append((ccomplex_with_sim_results, graph, energy_class))
         cellcomplex_variants[rotation] = ccomplex_list
     return cellcomplex_variants
