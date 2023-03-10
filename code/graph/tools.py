@@ -30,17 +30,12 @@ def save_graph_batch(ccomplex_database, name):
     for ccomplex_variant_list in ccomplex_database.values():
             for ccomplex_tuple in ccomplex_variant_list:
                 ccomplex, graph, energy_class = ccomplex_tuple
-                dgl_graph = DGL.ByGraph(graph, bidirectional=True, key='label', categories=categories(), node_attr_key='node_attr', tolerance=0.0001)
+                dgl_graph = DGL.ByGraph(graph, bidirectional=True, key='label', categories=list(range(91)), node_attr_key='node_attr', tolerance=0.0001)
                 dgl_graphs.append(dgl_graph)
                 labels.append(energy_class)
     graph_path = './graph/data/graph_batches/graph_batch_' + name + '.bin'
     graph_labels = {'label': torch.tensor(labels)}
     save_graphs(graph_path, dgl_graphs, graph_labels)
-
-def categories():
-    with open('./graph/conversion_list.json', 'r') as cl:
-        conversion_list = json.load(cl)
-    return list(range(len(conversion_list)))
     
 def build_dataset(amount):
     dgl_graphs = []
@@ -95,7 +90,7 @@ def save_figs(results, dataset):
     Plotly.ExportToImage(loss_fig, './graph/data/results/loss.svg', format='svg', width='1280', height='720')
     acc_fig = DGL.Show(results, labels=['Epochs', 'Training Accuracy', 'Testing Accuracy'], title='Accuracy', x_title='Epoch', y_title='Accuracy', renderer='browser')
     Plotly.ExportToImage(acc_fig, './graph/data/results/accuracy.svg', format='svg', width='1280', height='720')
-    labels = dataset.labels.tolist()
+    labels = DGL.Labels(dataset)
     dist = DGL.CategoryDistribution(labels, categories=None, mantissa=4)
     dist_fig = Plotly.FigureByPieChart(dist['ratios'][0], dist['categories'][0])
     Plotly.Show(dist_fig, renderer='browser')
@@ -103,7 +98,7 @@ def save_figs(results, dataset):
     classifier = DGL.ClassifierByFilePath('./graph/data/classifier/classifier.pt')
     predicted = DGL.Predict(dataset, classifier)['labels']
     cm = DGL.ConfusionMatrix(labels, predicted, normalize=True)
-    cm_fig = Plotly.FigureByConfusionMatrix(cm, list(range(5)), showScale=False)
+    cm_fig = Plotly.FigureByConfusionMatrix(cm, list(range(2)), showScale=False)
     Plotly.Show(cm_fig, renderer='browser')
     Plotly.ExportToImage(cm_fig, './graph/data/results/confusion_matrix.svg', format='svg', width='1280', height='720')
     accuracy = DGL.Accuracy(labels, predicted)

@@ -37,9 +37,10 @@ def main(amount, seed = 1):
                 seed += 1
         save_graph_batch(ccomplex_database, str(frame))
         save_geometry_batch(ccomplex_database, str(frame))
-    unbalanced_dataset = build_dataset(amount)
-    dataset = balance_dataset(unbalanced_dataset)
-    results = train(dataset, batch_size=100, epochs=30, lr=1.0, hl_widths=[32])
+    #unbalanced_dataset = build_dataset(amount)
+    #dataset = balance_dataset(unbalanced_dataset)
+    dataset = build_dataset(amount)
+    results = train(dataset, batch_size=50, epochs=50, lr=0.01, hl_widths=[32], conv_layer_type='GraphConv', optimizer='adam')
     save_figs(results, dataset)
     return results, dataset
 
