@@ -42,7 +42,7 @@ def main():
     
     categories = categories()
     path = './graph/data/geometry'
-    for number in tqdm(range(1000, 1100), desc='rebuilding'):
+    for number in tqdm(range(0, 200), desc='rebuilding'):
         with zipfile.ZipFile(os.path.join(path, 'geometry_batch_' + str(number) + '.zip')) as frame_zip:
             cellcomplex_variants = {}
             for rotation in range(4):
