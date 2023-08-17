@@ -1,0 +1,1210 @@
+@article{aguiar2017algorithmic,
+    author = {Aguiar, Rita and Cardoso, Carmo and others},
+    journal = {Disciplines + Disruption - ACADIA},
+    title = {Algorithmic design and analysis fusing disciplines},
+    abstract = {In the past, there has been a rapid evolution in computational tools to represent and analyze architectural designs. Analysis tools can be used in all stages of the design process, but they are often only used in the final stages, where it might be too late to impact the design. This is due to the considerable time and effort typically needed to produce the analytical models required by the analysis tools. A possible solution would be to convert the digital architectural models into analytical ones, but unfortunately, this often results in errors and frequently the analytical models need to be built almost from scratch. These issues discourage architects from doing a performance-oriented exploration of their designs in the early stages of a project. To overcome these issues, we propose Algorithmic Design and Analysis, a method for analysis that is based on adapting and extending an algorithmic-based design representation so that the modeling operations can generate the elements of the analytical model containing solely the information required by the analysis tool. Using this method, the same algorithm that produces the digital architectural model can also automatically generate analytical models for different types of analysis. Using the proposed method, there is no information loss and architects do not need additional work to perform the analysis. This encourages architects to explore several design alternatives while taking into account the design’s performance. Moreover, when architects know the set of design variations they wish to analyze beforehand, they can easily automate the analysis process.},
+    publisher = {CUMINCAD},
+    year = {2017},
+}
+
+@article{aish2018topologic,
+    journal = {AAG},
+    title = {Topologic: tools to explore architectural topology},
+    author = {Aish, Robert and Jabi, Wassim and Lannon, Simon and Wardhana, Nicholas and Chatzivasileiadi, Aikaterini},
+    year = {2018},
+    abstract = {Buildings enclose and partition space and are built from assemblies of connected components. The many different forms of spatial and material partitioning and connectedness found within buildings can be represented by topology. This paper introduces the ‘‘Topologic’’ software library which integrates a number of architecturally relevant topological concepts into a unified application toolkit. The goal of the Topologic toolkit is to support the creation of the lightest, most understandable conceptual models of architectural topology. The formal language of topology is well-matched to the data input requirements for applications such as energy simulation and structural analysis. In addition, the ease with which these lightweight topological models can be modified encourages design exploration and performance simulation at the conceptual design phase. A challenging and equally interesting question is how can the formal language of topology be used to represent architectural concepts of space which have previously been described in rather speculative and subjective terms?},
+}
+
+@article{aksin2021use,
+    title = {Use of Simulation Techniques and Optimization Tools for Daylight, Energy and Thermal Performance: The case of office module (s) in different climates},
+    journal = {Simulation, prediction and evaluation in design - eCAADe},
+    pages = {409 - 418},
+    author = {Aksin, Feyza and Selçuk, Semra},
+    abstract = {In recent years, performance-based design has become the key issue behind design decisions in the construction industry towards reducing energy consumption. Various simulation techniques and optimization tools have started to be used together for performance objectives to reach optimal solutions for complex design process. In the sector, one of the most energy-consuming buildings is offices. This study examines the effects of integration of simulation programs and optimization tools on the daylight, energy and thermal performances of office buildings on different climates. Two cities, ankara and izmir, in turkey selected as locations. The study is carried out with total of thirteen parameters. With rhinoceros/grasshopper software, honeybee, ladybug and octopus plug-ins used for daylight, energy and thermal simulation and performance optimization. With the results obtained, the optimal configurations related with selected parameters are determined for reducing energy consumption while improving daylight and thermal performance on different climates.},
+    year = {2021},
+    volume = {2},
+}
+
+@article{alammar2021predicting,
+    author = {Alammar, Ammar and Jabi, Wassim and Lannon, Simon},
+    abstract = {The assessment of the impact of solar radiation on building envelopes has typically been achieved by using simulation software, which is time consuming and requires advanced computational knowledge. Given the increased complexity of large scale-projects and the demand for performative buildings, new innovative methods are required to assess the design efficiently. In this paper, we present an alternative and innovative approach to assessing solar radiation intensity on an office building envelope using two machine-learning (ML) models: Artificial Neural Network (ANN) and Decision Tree (DT). The experimental workflow of this paper consists of two stages. In the first stage, a generative parametric office tower and its urban context were designed and simulated using Grasshopper software to create a large synthetic dataset of the solar radiation that strikes the office room envelope with several types of analyses. In the second stage, the generated datasets were imported into two ML algorithms (ANN and DT) to create a model for training and testing. The comparison of these two ML models proved that input data types have a significant impact on the accuracy of the prediction and model selection. DT was found to be more accurate than ANN because the data is mostly categorical, which is the most suitable learning background for DT algorithms.},
+    journal = {SimAUD},
+    year = {2021},
+    title = {Predicting incident solar radiation on building’s envelope using machine learning},
+}
+
+@book{alexander1977pattern,
+    year = {1977},
+    publisher = {Oxford university press},
+    author = {Alexander, Christopher},
+    title = {A pattern language: towns, buildings, construction},
+}
+
+@article{alymani2022graph,
+    abstract = {Some architects struggle to choose the best form of how the building meets the ground and may benefit from a suggestion based on precedents. This paper presents a novel proof of concept workflow that enables machine learning (ML) to automatically classify three-dimensional (3D) prototypes with respect to formulating the most appropriate building/ground relationship. Here, ML, a branch of artificial intelligence (AI), can ascertain the most appropriate relationship from a set of examples provided by trained architects. Moreover, the system classifies 3D prototypes of architectural precedent models based on a topological graph instead of 2D images. The system takes advantage of two primary technologies. The first is a software library that enhances the representation of 3D models through non-manifold topology (Topologic). The second is an end-to-end deep graph convolutional neural network (DGCNN). The experimental workflow in this paper consists of two stages. First, a generative simulation system for a 3D prototype of architectural precedents created a large synthetic database of building/ground relationships with numerous topological variations. This geometrical model then underwent conversion into semantically rich topological dual graphs. Second, the prototype architectural graphs were imported to the DGCNN model for graph classification. While using a unique data set prevents direct comparison, our experiments have shown that the proposed workflow achieves highly accurate results that align with DGCNN’s performance on benchmark graphs. This research demonstrates the potential of AI to help designers identify the topology of architectural solutions and place them within the most relevant architectural canons.},
+    author = {Alymani, Abdulrahman and Jabi, Wassim and Corcoran, Padraig},
+    pages = {1-15},
+    title = {Graph machine learning classification using architectural 3D topological models},
+    publisher = {SAGE Publications Sage UK: London, England},
+    year = {2022},
+    journal = {Simulation},
+}
+
+@incollection{alymani2023classifying,
+    title = {Classifying building and ground relationships using unsupervised graph-level representation learning},
+    pages = {305--320},
+    booktitle = {Design Computing and Cognition’22},
+    year = {2023},
+    abstract = {When designing, architects must always consider the ground on which their buildings are supported. Our aim is to use data mining and artificial intelligence (AI) techniques to help architects identify emerging patterns and trends in building design and suggest relevant precedents. Our paper proposes a novel approach to unsupervised building design representation learning that embeds a building design graph in a vector space whereby similar graphs have comparable vectors or representations. These learned representations of building design graphs can, in turn, act as input to downstream tasks, such as building design clustering and classification. Two primary technologies are used in the paper. First, is a software library that enhances the representation of 3D models through non-manifold topology entitled Topologic. Second, an unsupervised graph-level representation learning method is entitled InfoGraph. Result experiments with unsupervised graph-level representation learning demonstrates high accuracy on the downstream task of graph classification using the learned representation.},
+    publisher = {Springer},
+    author = {Alymani, Abdulrahman and Mujica, Andrea and Jabi, Wassim and Corcoran, Padraig},
+}
+
+@inproceedings{anuradha2008voronoi,
+    author = {Anuradha, V and Sabnis, Minal and Thirumavalavn, Vennila},
+    title = {Voronoi diagram voro: Application of interactive weighted Voronoi diagrams as an alternate master-planning framework for business parks.},
+    booktitle = {Proceedings of the 13th International Conference on Computer-Aided Architectural Design Research in Asia},
+    abstract = {This paper explores the application of Interactive Weighted Voronoi diagrams in business park master plans through site specific testing, derivation of zoning parameters and creation of an applet.},
+    pages = {399--408},
+    year = {2008},
+}
+
+@article{as2018artificial,
+    year = {2018},
+    author = {As, Imdat and Pal, Siddharth and Basu, Prithwish},
+    volume = {16},
+    pages = {306--327},
+    publisher = {SAGE Publications Sage UK: London, England},
+    number = {4},
+    abstract = {Artificial intelligence, and in particular machine learning, is a fast-emerging field. Research on artificial intelligence focuses mainly on image-, text- and voice-based applications, leading to breakthrough developments in self-driving cars, voice recognition algorithms and recommendation systems. In this article, we present the research of an alternative graph-based machine learning system that deals with three-dimensional space, which is more structured and combinatorial than images, text or voice. Specifically, we present a function-driven deep learning approach to generate conceptual design. We trained and used deep neural networks to evaluate existing designs encoded as graphs, extract significant building blocks as subgraphs and merge them into new compositions. Finally, we explored the application of generative adversarial networks to generate entirely new and unique designs.},
+    title = {Artificial intelligence in architecture: Generating conceptual design via deep learning},
+    journal = {International Journal of Architectural Computing},
+}
+
+@book{as2021routledge,
+    notes = {Providing the most comprehensive source available, this book surveys the state of the art in artifcial intelligence (AI) as it relates to architecture. This book is organized in four parts: theoretical foundations, tools and techniques, AI in research, and AI in architectural practice. It provides a framework for the issues surrounding AI and ofers a variety of perspectives. It contains 24 consistently illustrated contributions examining seminal work on AI from around the world, including the United States, Europe, and Asia. It articulates current theoretical and practical methods, ofers critical views on tools and techniques, and suggests future directions for meaningful uses of AI technology. Architects and educators who are concerned with the advent of AI and its ramifcations for the design industry will fnd this book an essential reference.},
+    author = {As, Imdat and Basu, Prithwish},
+    title = {The Routledge companion to artificial intelligence in architecture},
+    publisher = {Routledge, Taylor \& Francis Group},
+    year = {2021},
+    volume = {1},
+}
+
+@inproceedings{balzer2005voronoi,
+    title = {Voronoi treemaps},
+    year = {2005},
+    organization = {IEEE},
+    abstract = {Treemaps are a well-known method for the visualization of attributed hierarchical data. Previously proposed Treemap layout algorithms are limited to rectangular shapes, which causes problems with the aspect ratio of the rectangles as well as with identifying the visualized hierarchical structure. The approach of Voronoi Treemaps presented in this paper eliminates these problems through enabling subdivisions of and in polygons. Additionally, this allows for creating Treemap visualizations within areas of arbitrary shape, such as triangles and circles, thereby enabling a more flexible adaptation of Treemaps for a wider range of applications.},
+    pages = {49--56},
+    booktitle = {IEEE Symposium on Information Visualization, 2005. INFOVIS 2005.},
+    author = {Balzer, Michael and Deussen, Oliver},
+}
+
+@article{bao2013generating,
+    year = {2013},
+    abstract = {Good building layouts are required to conform to regulatory guidelines, while meeting certain quality measures. While different methods can sample the space of such good layouts, there exists little support for a user to understand and systematically explore the samples. Starting from a discrete set of good layouts, we analytically characterize the local shape space of good layouts around each initial layout, compactly encode these spaces, and link them to support transitions across the different local spaces. We represent such transitions in the form of a portal graph. The user can then use the portal graph, along with the family of local shape spaces, to globally and locally explore the space of good building layouts. We use our framework on a variety of different test scenarios to showcase an intuitive design, navigation, and exploration interface.},
+    title = {Generating and exploring good building layouts},
+    volume = {32},
+    number = {4},
+    publisher = {ACM New York, NY, USA},
+    pages = {1--10},
+    journal = {ACM Transactions on Graphics (TOG)},
+    author = {Bao, Fan and Yan, Dong-Ming and Mitra, Niloy J and Wonka, Peter},
+}
+
+@inproceedings{belem2019impact,
+    year = {2019},
+    author = {Bel{\'e}m, Catarina and Santos, Luis and Leit{\~a}o, Ant{\'o}nio},
+    title = {On the Impact of Machine Learning: Architecture without Architects},
+    booktitle = {CAAD Futures},
+    abstract = {Architecture has always followed and adopted technological breakthroughs of other areas. As a case in point, in the last decades, the field of computation changed the face of architectural practice. Considering the recent breakthroughs of Machine Learning (ML), it is expectable to see architecture adopting ML-based approaches. However, it is not yet clear how much this adoption will change the architectural practice and in order to forecast this change it is necessary to understand the foundations of ML and its impact in other fields of human activity. This paper discusses important ML techniques and areas where they were successfully applied. Based on those examples, this paper forecast hypothetical uses of ML in the realm of building design. In particular, we examine ML approaches in conceptualization, algorithmization, modeling, and optimization tasks. In the end, we conjecture potential applications of such approaches, suggest future lines of research, and speculate on the future face of the architectural profession.},
+    pages = {247--293},
+}
+
+@inproceedings{bielski2020topological,
+    author = {Bielski, Jessica and Langenhan, Christoph and Weyand, Babara and Neuber, Markus and Eisenstadt, Viktor and Althoff, Klaus-Dieter},
+    title = {Topological Queries and Analysis of School Buildings Based on Building Information Modeling (BIM) Using Parametric Design Tools and Visual Programming to Develop New Building Typologies},
+    year = {2020},
+    booktitle = {eCAADe-Education and research in Computer Aided Architectural Design in Europe},
+    abstract = {School buildings are currently one of the largest portions of planning and building projects in Germany. In order to reflect the continuous developments in school building construction with constantly changing spatial requirements, an approach to analyse, derive and combine patterns of schools is proposed to adapt school typologies accordingly. Therefore, the topology is analysed, concerning interconnection methods, such as adjacency, accessibility, depth, and flow. The geometric analysis of e.g. room sizes or spatial proportions is enhanced by including grouping of rooms, estimated room clusters, or room shapes. Furthermore, text-matching is used to determine e.g. room program fulfilment, or assigning functional room descriptions to predefined room types, revealing huge differences of terms throughout time and architects. First results of the analyses show a relevant correlation between spatial proportion and room types.},
+}
+
+@article{boguslawski2016two,
+    journal = {ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+    author = {Boguslawski, Pawel and Mahdjoubi, Lamine and Zverovich, Vadim and Fadli, F},
+    publisher = {Copernicus GmbH},
+    volume = {3},
+    abstract = {Nowadays, in a rapidly developing urban environment with bigger and higher public buildings, disasters causing emergency situations and casualties are unavoidable. Preparedness and quick response are crucial issues saving human lives. Available information about an emergency scene, such as a building structure, helps for decision making and organizing rescue operations. Models supporting decision-making should be available in real, or near-real, time. Thus, good quality models that allow implementation of automated methods are highly desirable. This paper presents details of the recently developed method for automated generation of variable density navigable networks in a 3D indoor environment, including a full 3D topological model, which may be used not only for standard navigation but also for finding safe routes and simulating hazard and phenomena associated with disasters such as fire spread and heat transfer.},
+    title = {Two-graph building interior representation for emergency response applications},
+    year = {2016},
+}
+
+@article{boon2015optimizing,
+    year = {2015},
+    pages = {25--37},
+    volume = {7},
+    journal = {Perkins+ Will Research Journal},
+    author = {Boon, Christopher and Griffin, Corey and Papaefthimious, Nicholas and Ross, Jonah and Storey, Kip},
+    number = {2},
+    title = {Optimizing spatial adjacencies using evolutionary parametric tools: using grasshopper and galapagos to analyze, visualize, and improve complex architectural programming},
+    abstract = {This article documents the use of Grasshopper and Galapagos (Rhino plugins) as analytical tools to graphically represent and optimize the adjacency requirements in programmatic spaces. The resulting three-dimensional spatial diagrams are evaluated based on evolutionary fitness, which within this research context is defined as minimizing the numerical value of the total distance of all interconnected programmatic elements. This approach offers a unique system of analysis that can create an extensive range of otherwise unexplored solutions to space planning when faced with complex adjacency requirements and a large number of programmatic elements. The Grasshopper script is a significant leap forward over existing research in this area, with the ability for users to define an irregular shaped site boundary, input multiple stories, relate program elements to external adjacencies (views, parking, etc.) and handle an unlimited number of program elements. Consequently, the resulting script can be used as an aid in the schematic design of buildings that have inherently complex programmatic relationships. This article uses a three-story hospital on a sloping site with fifty program elements to demonstrate the efficacy of this approach.},
+}
+
+@article{caetano2020computational,
+    pages = {287--300},
+    volume = {9},
+    publisher = {Elsevier},
+    title = {Computational design in architecture: Defining parametric, generative, and algorithmic design},
+    journal = {Frontiers of Architectural Research},
+    number = {2},
+    author = {Caetano, Inês and Santos, Luís and Leitao, Antonio},
+    abstract = {Computation-based approaches in design have emerged in the last decades and rapidly became popular among architects and other designers. Design professionals and researchers adopted different terminologies to address these approaches. However, some terms are used ambiguously and inconsistently, and different terms are commonly used to express the same concept. This paper discusses computational design (CD) and proposes an improved and sound taxonomy for a set of key CD terms, namely, parametric, generative, and algorithmic design, based on an extensive literature review from which different definitions by various authors were collected, analyzed, and compared.},
+    year = {2020},
+}
+
+@article{caldas2012generation,
+    journal = {Combining an evolutionary generative design system with a shape grammar},
+    pages = {459--470},
+    author = {Caldas, Luìsa G and Santos, Luìs},
+    year = {2012},
+    abstract = {GENE_ARCH is a Generative Design System that combines Pareto Genetic Algorithms with an advanced building energy simulation engine. This work explores its integration with a Shape Grammar, acting as GENE_ARCH’s shape generation module. The urban patio house typology is readdressed in a contemporary context, both by improving its energy-efficiency standards, and by rethinking its role in the genesis of high-density urban areas, while respecting its specific spatial organization and cultural grounding. Field work was carried out in Marrakesh, surveying a number of patio houses which became the Corpus of Design, from where a Shape Grammar was extracted. The computational implementation of the patio house grammar was done within GENE_ARCH. The resulting program was able to generate new, alternative patio houses designs that were more energy efficient, while respecting the traditional rules captured from the analysis of existing houses. After the computational system was fully implemented, it was possible to complete different sets of experiments. The first experiments kept more restrained rules, thus generating new designs that closer resembled the existing ones. The progressive relaxation of rules and constraints allowed for a larger number of variations to emerge. Analysis of energy results provide insight into the main patterns resulting from the evolutionary search processes, namely in terms of form factors of generated solutions, and urban densities achieved.},
+    title = {Generation of Energy-Efficient Patio Houses With GENE-ARCH},
+}
+
+@article{calixto2015literature,
+    number = {3},
+    author = {Calixto, Victor and Celani, Gabriela},
+    volume = {2},
+    abstract = {Space planning in architecture is a field of research in which the process of arranging a set of space elements is the main concern. This paper presents a survey of 31 papers among applications and reviews of space planning method using evolutionary algorithms. The objective of this work was to organize, classify and discuss about twenty-two years of SP based on an evolutionary approach to orient future research in the field.},
+    journal = {Blucher Design Proceedings},
+    year = {2015},
+    title = {A literature review for space planning optimization using an evolutionary algorithm approach: 1992-2014},
+    pages = {662--671},
+}
+
+@conference{campo2020how,
+    year = {2020},
+    notes = {This paper strives to interrogate the abilities of machine vision techniques based on a family of deep neural networks, called generative adversarial neural networks (GANs), to devise alternative planning solutions. The basis for these processes is a large database of existing planning solutions. For the experimental setup of this paper, these plans were divided into two separate learning classes: Modern and Baroque. The proposed algorithmic technique leverages the large amount of structural and symbolic information that is inherent to the design of planning solutions throughout history to generate novel unseen plans. In this area of inquiry, aspects of culture such as creativity, agency, and authorship are discussed, as neural networks can conceive solutions currently alien to designers. These can range from alien morphologies to advanced programmatic solutions. This paper is primarily interested in interrogating the second existing but uncharted territory.},
+    booktitle = {Proceedings of the ACADIA Conference 2020},
+    title = {How Machines Learn to Plan - A Critical Interrogation  of Machine Vision Techniques  in Architecture.},
+    author = {del Campo, Matias},
+}
+
+@article{canestrino2020generating,
+    journal = {Proceedings of SiGraDi 2020},
+    author = {Canestrino, Giuseppe and Greco, Laura and Spada, Francesco and Lucente, Roberta},
+    title = {Generating architectural plan with evolutionary multiobjective optimization algorithms: a benchmark case with an existent construction system},
+    pages = {149--156},
+    abstract = {In architectural design, evolutionary multiobjective optimization algorithms (EMOA) have found use in numerous practical applications in which qualitative and quantitative aspects can be transformed into fitness functions to be optimized. This paper shows that they can be used in an architectural plan design process that starts from a more traditional approach. The benchmark case uses a novel construction system, called Ac.Ca. Building, with a vast architectural and technological database, arleady validated, to generate architectural plan for a residential towerbuilding with a parametric approach and EMOA. The proposed framework differs from past research because uses spatial units with high level of architectural and tecnological definition.},
+    year = {2020},
+}
+
+@inproceedings{canestrino2021influence,
+    year = {2021},
+    organization = {Robert Gordon University},
+    title = {On the influence of evolutionary algorithm (EA) optimization in architectural design: a reflection through an architectural envelope's shadowing system design},
+    booktitle = {Architecture in the Age of Disruptive Technologies: Transformation and Challenges},
+    author = {Canestrino, Giuseppe},
+    abstract = {Evolutionary Algorithm (EA) are optimization techniques that can improve measurable performances of a design. Currently, they see many research interests and are advertised, among generative design, as the next big thing in architecture by some software house. However, they still see limited professional use. This paper, through the analysis of past researches and a case study on an architectural envelope’s shadowing system design, reflects on the reasons for this and on how the use of EA influences the product and the process of architectural design. Also, methodological principles to suit the use of EA in an architectural design process are discussed.},
+}
+
+@article{carta2021self,
+    abstract = {This article introduces and comments on some of the techniques currently used by designers to generate automatic building floor plans and spatial configurations in general, with emphasis on machine learning and neural networks models. This is a relatively new tendency in computational design that reflects a growing interest in advanced generative and optimization models by architects and building engineers. The first part of this work contextualizes self-organizing floor plans in architecture and computational design, highlighting their importance and potential for designers as well as software developers. The central part discusses some of the most common techniques with concrete examples, including Neuro Evolution of Augmenting Topologies (NEAT) and Generative Adversarial Networks (GAN). The final section of the article provides some general comments considering pitfalls and possible future developments, as well as speculating on the future of this trend.},
+    author = {Carta, Silvio},
+    journal = {Harvard Data Science Review HDSR},
+    title = {Self-Organizing Floor Plans},
+    year = {2021},
+}
+
+@incollection{chaillou2021ai,
+    publisher = {Routledge},
+    pages = {420--441},
+    title = {AI and architecture: An experimental perspective},
+    author = {Chaillou, Stanislas},
+    year = {2021},
+    booktitle = {The Routledge Companion to Artificial Intelligence in Architecture},
+}
+
+@inproceedings{chatzikonstantinou20143,
+    year = {2014},
+    author = {Chatzikonstantinou, Ioannis},
+    title = {A 3-dimensional architectural layout generation procedure for optimization applications: DC-RVD},
+    pages = {287--296},
+    abstract = {A procedure for generating 3-dimensional spatial configurations for optimization applications, termed Dimension Constrained Rectangular Voronoi Diagram (DC-RVD), is presented in this paper. The procedure is able to generate a non-overlapping configuration of spatial units in 3-dimensional space, given a string of real values. It constitutes an extension and adaptation of the Rectangular Voronoi Diagram generating procedure, found in the work of Choi and Young (1991). An extensive description of the procedure, with the relevant pseudocode is included in the paper. The procedure is tested in a stochastic optimisation-based decision support environment. Testing is done using a case study of a medium-sized family house. The result indicate promising performance.},
+    booktitle = {Proceedings of the 2014 eCAADe Conference},
+    volume = {1},
+}
+
+@article{chatzivasileiadi2018effect,
+    volume = {2},
+    year = {2018},
+    author = {Chatzivasileiadi, Aikaterini and Hosney Lila, Anas M and Lannon, Simon and Jabi, Wassim},
+    title = {The effect of reducing geometry complexity on energy simulation results},
+    abstract = {Accuracy and time are metrics inherently associated with the design process and the energy performance simulation of buildings. The accurate representation of the building is an essential requirement for energy analysis, which comes with the expense of time; however, this is in contrast with the need to minimise the simulation time in order to make it compatible with design times. This is a particularly interesting aspect in the case of complex geometries, which are often simplified for use in building energy performance simulation. The effects of this simplification on the accuracy of simulation results are not usually reported. This paper explored these effects through a systematic analysis of several test cases. The results indicate that the use of orthogonal prisms as simplified surrogates for buildings with complex shapes presents a worst-case scenario that should be avoided where possible. A significant reduction of geometry complexity by at least 50\% can also be achieved with negligible effects on simulation results, while minimising the time requirements. Accuracy, however, deteriorates rapidly below a critical threshold.},
+    journal = {Simulation, Prediction and Evaluation Explorations - eCAADe 36},
+}
+
+@article{coates2005generating,
+    title = {Generating architectural spatial configurations. Two approaches using Voronoi tessellations and particle systems},
+    author = {Coates, Paul and Derix, Christian and Krakhofer, Ing Stefan Paul and Karanouh, AbdulMajid},
+    abstract = {It was one of the primary goals of the original Master’s programme in Computing and design at UEL in 1991 that we should work towards defining morphological generative processes for the conceptual design of architectural objects. These two papers offer a range of techniques which have been developed by two of this years MSc students (04-05) which show that we are getting close to this. The approaches range from computational geometric approaches (3d parametrics and voronoi diagrams) to emergent spatial orgaisation using agent based modelling. In many cases the resultant geometry is defined to the point where it can be transferred to advanced evaluation and fabrication systems, thus making this work sufficiently developed to begin to form a useful part in practical design processes.},
+    year = {2005},
+    journal = {8th Generative Art Conference GA2005},
+}
+
+@article{das2016space,
+    title = {Space plan generator: Rapid generation and evaluation of floor plan design options to inform decision making},
+    abstract = {Design exploration in architectural space planning is often constrained by tight deadlines and a need to apply necessary expertise at the right time. We hypothesize that a system that can computationally generate vast numbers of design options, respect project constraints, and analyze for client goals, can assist the design team and client to make better decisions. This paper explains a research venture built from insights into space planning from senior planners, architects, and experts in the field, coupled with algorithms for evolutionary systems and computational geometry, to develop an automated computational framework that enables rapid generation and analysis of space plan layouts. The system described below automatically generates hundreds of design options from inputs typically provided by an architect, including a site outline and program document with desired spaces, areas, quantities, and adjacencies to be satisfied. We envision that this workflow can clarify project goals early in the design process, save time, enable better resource allocation, and assist key stakeholders to make informed decisions and deliver better designs. Further, the system is tested on a case study healthcare design project with set goals and objectives.},
+    publisher = {CumInCAD},
+    author = {Das, Subhajit and Day, Colin and Hauck, John and Haymaker, John and Davis, Diana},
+    journal = {ACADIA - Posthuman Frontiers},
+    year = {2016},
+}
+
+@article{dawes2013applications,
+    year = {2013},
+    title = {Applications of graph theory in architectural analysis: past, present and future research.},
+    author = {Dawes, Michael J and Ostwald, Michael J},
+    abstract = {In the 1970s architectural scholars adopted graph theory to support several major analytical approaches to interior and urban design. While the basis for graph theory in architecture is identical to that in mathematics, architects developed several discipline-specific methods for mapping nodes and edges to various spatial and formal features, and then set out to interpret these maps through a combination of mathematical analysis and observations of human behaviour, social structures and building types. This chapter undertakes a review of architectural applications of graph theory, spanning from its initial use for solving pedestrian circulation problems, through to more recent applications providing insights into access planning, design psychology and way-finding. Through this critical review, three mapping or abstraction techniques, which are a precursor to graph theory analysis, are described and demonstrated. Finally, the chapter identifies three areas that could be the subject of future applications of graph theory in design.},
+    journal = {NOVA},
+    publisher = {Nova Science},
+}
+
+@article{egor2020computer,
+    year = {2020},
+    publisher = {Elsevier},
+    pages = {132--139},
+    volume = {44},
+    author = {Egor, Gavrilov and Sven, Schneider and Martin, Dennemark and Reinhard, Koenig},
+    abstract = {For architects as well as developers and urban planners working on the floor plans or estimating the shape and dimensions of large buildings is always a challenge. This task requires some knowledge and what is more important – even with understanding of the process it is a very time-consuming task. One should take into consideration the arrangement of all rooms as well as adjacencies and connections of main spaces. Presented project can be considered as an exploration of various ways of generating floor plans for public buildings, which was followed by creating a new algorithm for solving that task. Public buildings were chosen as a main target of conducted research because of their complex and non-standardized structure. The aim was to try different previously described approaches, invent completely new techniques and methods, choose the best of them and incorporate them into our own generator. The creation of working generator prototype was an important target of the project and should not be considered as its final stage, since this trial revealed some positive and negative sides of chosen approach and therefore serves as an intermediate stage. Floor plans analysis was conducted in order to understand the structural patterns of communication spaces in built public houses. One of positive outcomes of this investigation is that public buildings do not share a lot of features in common, therefore this field of exploration is rather unobstructed and provides a lot of possibilities for experiments.},
+    journal = {Procedia Manufacturing},
+    title = {Computer-aided approach to public buildings floor plan generation. Magnetizing Floor Plan Generator},
+}
+
+@inproceedings{eisenstadt2019generation,
+    title = {Generation of Floor Plan Variations with Convolutional Neural Networks and Case-based Reasoning--An Approach for Unsupervised Adaptation of Room Configurations within a Framework for Support of Early Conceptual Design.},
+    booktitle = {eCAADe SIGraDi Conference, Porto},
+    abstract = {We present an approach for computer-aided generation of different variations of floor plans during the early phases of conceptual design in architecture. The early design phases are mostly characterized by the processes of inspiration gaining and search for contextual help in order to improve the building design at hand. The generation method described in this work uses the novel as well as established artificial intelligence methods, namely, generative adversarial nets and case-based reasoning, for creation of possible evolutions of the current design based on the most similar previous designs. The main goal of this approach is to provide the designer with information on how the current floor plan can evolve over time in order to influence the direction of the design process. The work described in this paper is part of the methodology FLEA (Find, Learn, Explain, Adapt) whose task is to provide a holistic structure for support of the early conceptual phases in architecture. The approach is implemented as the adaptation component of the framework MetisCBR that is based on FLEA.},
+    year = {2019},
+    author = {Eisenstadt, Viktor and Langenhan, Christoph and Althoff, Klaus-Dieter},
+}
+
+@inproceedings{eisenstadt2020student,
+    booktitle = {LWDA},
+    year = {2020},
+    title = {Student Graduation Projects in the Context of Framework for AI-Based Support of Early Conceptual Phases in Architecture.},
+    pages = {174--179},
+    author = {Eisenstadt, Viktor and Althoff, Klaus-Dieter and Langenhan, Christoph},
+    abstract = {In this paper, current, past, and planned student graduation projects in the context of MetisCBR, the distributed AI framework for intelligent support of the early room configuration process in architectural design, will be presented. During the last years, a number of such projects were initiated to achieve a master’s or bachelor’s degree. All these projects have in common that they intend to extend the currently available functionalities of the framework with new features using the modern AI techniques and trends, such as explainable AI or generative adversarial nets, in order to keep up with the recent AI developments. For each project, a summary of the concept(s), results of the experiments (if any), and the current status (e.g., defended or ongoing) will be presented. The main goal of this paper is to reward the student contributions to the MetisCBR framework by making them visible to the research community.},
+}
+
+@inproceedings{eisenstadt2021comparative,
+    booktitle = {Proceedings of the 39th eCAADe conference},
+    abstract = {This paper presents an extended evaluation of tensor-based representations of graph-based architectural room configurations. This experiment is a continuation of examination of recognition of semantic architectural features by contemporary standard deep learning methods. The main aim of this evaluation is to investigate how the deep learning models trained using the relation tensors as data representation means perform on data not available in the training dataset. Using a straightforward classification task, stepwise modifications of the original training dataset and manually created spatial configurations were fed into the models to measure their prediction quality. We hypothesized that the modifications that influence the class label will not decrease this quality, however, this was not confirmed and most likely the latent non-class defining features make up the class for the model. Under specific circumstances, the prediction quality still remained high for the winning relation tensor type.},
+    year = {2021},
+    title = {Comparative evaluation of tensor-based data representations for deep learning methods in architecture},
+    author = {Eisenstadt, Viktor and Arora, Hardik and Ziegler, Christoph and Bielski, Jessica and Langenhan, Christoph and Althoff, K and Dengel, Andreas},
+    pages = {45--54},
+    volume = {1},
+}
+
+@inproceedings{eisenstadt2021exploring,
+    year = {2021},
+    booktitle = {CAADRIA},
+    abstract = {The main aim of this research is to harness deep learning techniques to support architectural design problems in early design phases, for example, to enable auto-completion of unfinished designs. For this purpose, we investigate the possibilities offered by established deep learning libraries such as TensorFlow. In this paper, we address a core challenge that arises, namely the transformation of semantic building information into a tensor format that can be processed by the libraries. Specifically, we address the representation of information about room types of a building and type of connection between the respective rooms. We develop and discuss five formats. Results of an initial evaluation based on a classification task show that all formats are suitable for training deep learning networks. However, a clear winner could be determined as well, for which a maximum value of 98\% for validation accuracy could be achieved.},
+    title = {Exploring optimal ways to represent topological and spatial features of building designs in deep learning methods and applications for architecture},
+    author = {Eisenstadt, Viktor and Arora, Hardik and Ziegler, Christoph and Bielski, Jessica and Langenhan, Christoph and Althoff, Klaus-Dieter and Dengel, Andreas and Petzold, Frank},
+}
+
+@article{fedorova2021synthetic,
+    title = {Synthetic 3d data generation pipeline for geometric deep learning in architecture},
+    year = {2021},
+    abstract = {With the growing interest in deep learning algorithms and computational design in the architectural field, the need for large, accessible and diverse architectural datasets increases. Due to the complexity of such 3D datasets, the most widespread techniques of 3D scanning and manual building modeling are very time-consuming, which does not allow to have a sufficiently large open-source dataset. We decided to tackle this problem by constructing a field-specific synthetic data generation pipeline that generates an arbitrary amount of 3D data along with the associated 2D and 3D annotations. The variety of annotations, the flexibility to customize the generated building and dataset parameters make this framework suitable for multiple deep learning tasks, including geometric deep learning that requires direct 3D supervision. Creating our building data generation pipeline we leveraged the experts’ architectural knowledge in order to construct a framework that would be modular, extendable and would provide a sufficient amount of class-balanced data samples. Moreover, we purposefully involve the researcher in the dataset customization allowing the introduction of additional building components, material textures, building classes, number and type of annotations as well as the number of views
+per 3D model sample. In this way, the framework would satisfy different research requirements and would be adaptable to a large variety of tasks.},
+    author = {Fedorova, Stanislava and Tono, Alberto and Nigam, Meher Shashwat and Zhang, Jiayao and Ahmadnia, Amirhossein and Bolognesi, Cecilia and Michels, Dominik L},
+    journal = {arXiv preprint arXiv:2104.12564},
+}
+
+@inproceedings{franz2005graph,
+    pages = {30--38},
+    year = {2005},
+    author = {Franz, Gerald and Mallot, Hanspeter A and Wiener, Jan M},
+    abstract = {Graph-based operationalizations of space are used in architecture as well as in cognitive science. In such models, environments are usually described by means of nodes and edges, roughly corresponding to places and their spatial relations. In the field of cognitive science, view and place graphs are models of mental representations of environments and used for the explanation of wayfinding behavior such as exploration and route planning. In architecture, space syntax and visibility graph analysis aim at identifying and describing structural properties of built environments that determine their usage and experience. In cognitive science, mental representations of space cannot be seen independently from the formal and configurational properties of the corresponding environments that are well captured by architectural description systems. Vice versa, formal descriptions of space as used in architecture gain plausibility and relevance by incorporating results from cognitive research that allow the prediction and explanation of actual human behavior. In this paper approaches from the two different disciplines are therefore reviewed and compared. Special interest concerns their scope, structure, and representational content. Parallels, differences, and specific strengths are discussed. Furthermore, based on recent empiric work, strategies to integrate aspects from both disciplines are outlined.},
+    title = {Graph-based models of space in architecture and cognitive science: A comparative analysis},
+    booktitle = {17th International Conference on Systems Research, Informatics and Cybernetics (INTERSYMP 2005)},
+    organization = {International Institute for Advanced Studies in Systems Research and Cybernetics},
+}
+
+@article{galle1981algorithm,
+    author = {Galle, Per},
+    journal = {Communications of the ACM},
+    number = {12},
+    year = {1981},
+    title = {An algorithm for exhaustive generation of building floor plans},
+    publisher = {ACM New York, NY, USA},
+    pages = {813--825},
+    abstract = {The combinatorial complexity of most floor plan design problems makes it practically impossible to obtain a systematic knowledge of possible solutions using pencil and paper. The objective of this paper is to contribute to the development of computer methods providing such knowledge for the designer. The paper describes an algorithm which generates all possible rectangular plans on modular grids with congruent cells, subject to constraints on total area, room areas, wall lengths, room adjacencies, and room orientations. To make room sizes regular and limit the solution set only such grids are used which minimize the number of cells in the smallest room. The description is sufficiently detailed to serve as a basis for programming. Test results for a Pascal implementation of the algorithm are reported. Realistic problems of up to ten rooms have been solved in modest lengths of computer time. The results indicate that the approach of exhaustive generation may prove to be more fruitful than generally assumed.},
+    volume = {24},
+}
+
+@article{grzesiak2021evolutionary,
+    year = {2021},
+    journal = {Applied Sciences},
+    publisher = {MDPI},
+    pages = {1-14},
+    abstract = {In this paper, an evolutionary technique is proposed as a method for generating new design solutions for the floor layout problem. The genotypes are represented by the vectors of numerical values of points representing endpoints of room walls. Equivalents of genetic operators for such a representation are proposed. A case study of the design problem of one-story houses is presented from the initial requirements to the best solutions. An evaluation method using requirement-weighted fitness function for evolved plans is also proposed. The obtained results as well as the advantages and issues related to such an approach are also discussed.},
+    title = {Evolutionary methods in house floor plan design},
+    author = {Grzesiak-Kope{\'c}, Katarzyna and Strug, Barbara and {\'S}lusarczyk, Grazyna},
+    number = {17},
+    volume = {11},
+}
+
+@article{guo2017evolutionary,
+    abstract = {This paper presents a method for the automatic generation of a spatial architectural layout from a user-speciﬁed architectural program. The proposed approach binds a multi-agent topology ﬁnding system and an evolutionary optimization process. The former generates topology satisﬁed layouts for further optimization, while the latter focuses on reﬁning the layouts to achieve predeﬁned architectural criteria. The topology ﬁnding process narrows the search space and increases the performance in subsequent optimization. Results imply that the spatial layout modeling and the multi-ﬂoor topology are handled.},
+    publisher = {Elsevier},
+    year = {2017},
+    journal = {Frontiers of Architectural Research},
+    author = {Guo, Zifeng and Li, Biao},
+    pages = {53--62},
+    number = {1},
+    volume = {6},
+    title = {Evolutionary approach for spatial architecture layout design enhanced by an agent-based topology finding system},
+}
+
+@article{hauck2017energy,
+    pages = {277},
+    abstract = {In the process of building design, energy performance is often simulated using physical principles of thermodynamics and energy behaviour using elaborate simulation tools. However, energy simulation is computationally expensive and time consuming process. These drawbacks limit opportunities for design space exploration and prevent interactive design which results in environmentally inefficient buildings. In this paper we propose Energy Model Machine (EMM) as a general and flexible approximation model for instant energy performance prediction using machine learning (ML) algorithms to facilitate design space exploration in building design process. EMM can easily be added to design tools and provide instant feedback for real-time design iterations. To demonstrate its applicability, EMM is used to estimate energy performance of a medium size office building during the design space exploration in widely used parametrically design tool as a case study. The results of this study support the feasibility of using machine learning approaches to estimate energy performance for design exploration and optimization workflows to achieve high performance buildings.},
+    journal = {SharingofComputableKnowledge!},
+    year = {2017},
+    author = {Hauck, Anthony},
+    title = {Energy Model Machine (EMM)},
+}
+
+@book{hillier1989social,
+    publisher = {Cambridge university press},
+    title = {The social logic of space},
+    author = {Hillier, Bill and Hanson, Julienne},
+    year = {1989},
+}
+
+@article{hu2020graph2plan,
+    number = {4},
+    journal = {ACM Transactions on Graphics (TOG)},
+    year = {2020},
+    pages = {118--1},
+    author = {Hu, Ruizhen and Huang, Zeyu and Tang, Yuhan and Van Kaick, Oliver and Zhang, Hao and Huang, Hui},
+    publisher = {ACM New York, NY, USA},
+    title = {Graph2plan: Learning floorplan generation from layout graphs},
+    abstract = {We introduce a learning framework for automated floorplan generation which combines generative modeling using deep neural networks and user-in-the-loop designs to enable human users to provide sparse design constraints. Such constraints are represented by a layout graph. The core component of our learning framework is a deep neural network, Graph2Plan, which converts a layout graph, along with a building boundary, into a floorplan that fulfills both the layout and boundary constraints. Given an input building boundary, we allow a user to specify room counts and other layout constraints, which are used to retrieve a set of floorplans, with their associated layout graphs, from a database. For each retrieved layout graph, along with the input boundary, Graph2Plan first generates a corresponding raster floorplan image, and then a refined set of boxes representing the rooms. Graph2Plan is trained on RPLAN, a large-scale dataset consisting of 80K annotated floorplans. The network is mainly based on convolutional processing over both the layout graph, via a graph neural network (GNN), and the input building boundary, as well as the raster floorplan images, via conventional image convolution. We demonstrate the quality and versatility of our floorplan generation framework in terms of its ability to cater to different user inputs. We conduct both qualitative and quantitative evaluations, ablation studies, and comparisons with state-of-the-art approaches.},
+    volume = {39},
+}
+
+@article{ibrahim2011computing,
+    year = {2011},
+    journal = {University of Salford},
+    author = {Ibrahim, Mohamed Naeim A},
+    abstract = {The main issue we are after here is space layout planning, space layout planning which examine the capability to better utilization of architecture space, this paper will investigate the potentials of evolutionary computation in solving the combinatorial problem of space layout planning; it will focus on the topological level of problems, topological allocation concern with the relationships between two spaces, i.e. the adjacency and proximity between two spaces. The evolutionary system will use an approach brought from the biology science, Genetic algorithms was developed to solve the combinatorial problem of space layout planning, combinatorial problem resulted by the variety and intensity of large numbers of solutions configurations. The controversy in this research is that, multi-criteria constraints some time interact and reach optimum solutions, sometimes it conflict and cause no solution to be found. In the case of conflicting constraints heuristic solutions fails to find optimal solution when it stuck in local level of solutions during search process, however, it is proposed that, genetic algorithms exceed this by using techniques of selecting successful generations makers, mutate them into new generations, then applies crossover techniques for better solutions. This paper will implement the evolutionary design method in a research by design context, it will try to configure an optimum solution of five spaces pavilion floor plan, the main two issues which will be experienced are the way functional problem formulated and then how solution would be generated, it will represent spaces relationships in diagrams, these diagrams will include the form of relationships between spaces, it will justify the adjacency and proximity between both spaces themselves and between spaces and exterior forces, these diagrams will be saved in a form of Genes, these genes will be evolved according to Architectural design criteria, this criteria will be represented in a numerical fitness value, i.e. the space will need more daylight, the light intensity measuring system be will coded, calculated for each generation, a maximum intensity value will be a fitness for day light criteria.},
+    title = {Computing Architectural Layout},
+}
+
+@inproceedings{isaac2013analyzing,
+    pages = {1},
+    volume = {30},
+    year = {2013},
+    booktitle = {ISARC. Proceedings of the International Symposium on Automation and Robotics in Construction},
+    abstract = {The networks of interdependencies between elements in building projects, referred to as the project topology, are often complex and difficult for project teams to comprehend. It is hypothesized that a graphbased model of the project topology can be based on existing data in Building Information Models (BIM), facilitating the application of graph-theoretic algorithms to analyze this topology. The objective of this study is to propose an outline for the synthesis of BIM and graph theory. This synthesis is expected to contribute to the development of new tools for representing, managing and analyzing the design of building projects.},
+    title = {Analyzing building information using graph theory},
+    organization = {IAARC Publications},
+    author = {Isaac, S and Sadeghpour, F and Navon, R},
+}
+
+@inproceedings{jabi2013potential,
+    abstract = {In this paper we examine the potential of combining 2D shape packing algorithms and evolutionary methods in the design process. We investigate the ways such algorithms can be used in architectural design and how they may influence it. In the first part of this paper we introduce the theoretical framework of packing algorithms and genetic algorithms as well as the traditional design process and the nature of design problems. In the second part of the paper we introduce a software prototype that tests these algorithms in two contexts: the preliminary design of a shading façade pattern and the design of commercial housing layouts. The aim for both experiments was to generate optimal configurations based on user-defined criteria without resorting to exhaustive search. Several lessons were learned that point to the potential of evolutionary methods in architecture as well as the limitations of such methods. We conclude the paper with recommendations for further developing this research project.},
+    pages = {217},
+    title = {The potential of evolutionary methods in architectural design},
+    booktitle = {Proc. 31st Int. Conf. Educ. Res. Comput. Aided Archit. Des. Eur},
+    author = {Jabi, Wassim and Grochal, Barbara and Richardson, Adam},
+    year = {2013},
+    volume = {2},
+}
+
+@article{jabi2015potential,
+    year = {2015},
+    abstract = {The importance of decisions made during the early design stages has prompted researchers to advocate the use of building performance simulation (BPS) during that stage. This paper investigates non-manifold topology (NTM) as a novel approach to 3D modelling that has the potential to be highly compatible with the early design stages and with the input requirements for BPS. The proposed approach avoids the process of simplifying polyhedral models produced by Building Information Modelling (BIM) software to conduct BPS. In particular, NTM allows for a clear segmentation of a building, unambiguous space boundaries, and perfectly matched surfaces and glazing subsurfaces. The NTM approach was tested through a software prototype that integrates 3D modelling software and an energy simulation engine.},
+    publisher = {University of Cincinnati},
+    journal = {Environmental parametrics},
+    volume = {1},
+    author = {Jabi, Wassim},
+    title = {The potential of non-manifold topology in the early design stages},
+}
+
+@inproceedings{jabi2018topologic,
+    volume = {2},
+    author = {Jabi, Wassim and Aish, Robert and Lannon, Simon and Chatzivasileiadi, Aikaterini and Wardhana, Nicholas Mario},
+    title = {Topologic: A toolkit for spatial and topological modelling},
+    year = {2018},
+    booktitle = {Computing for a Better Tomorrow, Proceedings of the 36th eCAADe conference},
+    abstract = {This paper describes non-manifold topology (NMT) as it relates to the field of architecture and presents Topologic, an open-source software modelling library enabling hierarchical and topological representations of architectural spaces, buildings and artefacts through NMT. Topologic is designed as a core library and additional plugins to visual data flow programming (VDFP) software. The software architecture and class hierarchy are explained and two domain-specific demonstrative tools (TopologicEnergy and TopologicStructure) are presented to illustrate how third-party software developers could use Topologic to build their own solutions. The paper concludes with a reflection on the benefits and limitations of NMT in the design and simulation workflows and outlines future work.},
+    doi = {},
+    pages = {449--458},
+}
+
+@article{jabi2019synergy,
+    title = {The synergy of non-manifold topology and reinforcement learning for fire egress},
+    volume = {2},
+    journal = {Design - Artificial intelligence - eCAADe 37},
+    pages = {85 - 94},
+    year = {2019},
+    abstract = {This paper illustrates the synergy of non-manifold topology (NMT) and a branch of artificial intelligence and machine learning (ML) called reinforcement learning (RL) in the context of evaluating fire egress in the early design stages. One of the important tasks in building design is to provide a reliable system for the evacuation of the users in emergency situations. Therefore, one of the motivations of this research is to provide a framework for architects and engineers to better design buildings at the conceptual design stage, regarding the necessary provisions in emergency situations. This paper presents two experiments using different state models within a simplified game-like environment for fire egress with each experiment investigating using one vs. three fire exits. The experiments provide a proof-of-concept of the effectiveness of integrating RL, graphs, and non-manifold topology within a visual data flow programming environment. The results indicate that artificial intelligence, machine learning, and RL show promise in simulating dynamic situations as in fire evacuations without the need for advanced and time-consuming simulations.},
+    author = {Jabi, Wassim and Chatzivasileiadi, Aikaterini and Wardhana, Nicholas and Lannon, Simon and Aish, Robert},
+}
+
+@article{joyce2021limits,
+    year = {2021},
+    title = {Limits to Applied ML in Planning and Architecture},
+    author = {Joyce, Sam Conrad and Nazim, Ibrahim},
+    abstract = {There has been an exponential increase in Machine Learning (ML) research in design. Specifically, with Deep Learning becoming more accessible, frameworks like Generative Adversarial Networks (GANs), which are able to synthesise novel images are being used in the classification and generation of designs in architecture. While much of these explorations successfully demonstrate the 'magic' and potential of these techniques, their limits remain unclear, with only a few, but crucial, discussions on underlying fundamental limits and sensitivities of ML. This is a gap in our understanding of these tools especially within the complex context of planning and architecture. This paper seeks to discuss what limits ML in design as it exists today, by examining the state-of-the-art and mechanics of ML models relevant to design tasks. Aiming to help researchers to focus on productive uses of ML and avoid areas of over-promise.},
+    journal = {Computational design - eCAADe},
+}
+
+@inproceedings{kalervo2019cubicasa5k,
+    booktitle = {Image Analysis: 21st Scandinavian Conference, SCIA 2019, Norrk{\"o}ping, Sweden, June 11--13, 2019, Proceedings 21},
+    pages = {28--40},
+    author = {Kalervo, Ahti and Ylioinas, Juha and H{\"a}iki{\"o}, Markus and Karhu, Antti and Kannala, Juho},
+    organization = {Springer},
+    title = {Cubicasa5k: A dataset and an improved multi-task model for floorplan image analysis},
+    year = {2019},
+    abstract = {Better understanding and modelling of building interiors and the emergence of more impressive AR/VR technology has brought up the need for automatic parsing of floorplan images. However, there is a clear lack of representative datasets to investigate the problem further. To address this shortcoming, this paper presents a novel image dataset called CubiCasa5K, a large-scale floorplan image dataset containing 5000 samples annotated into over 80 floorplan object categories. The dataset annotations are performed in a dense and versatile manner by using polygons for separating the different objects. Diverging from the classical approaches based on strong heuristics and low-level pixel operations, we present a method relying on an improved multi-task convolutional neural network. By releasing the novel dataset and our implementations, this study significantly boosts the research on automatic floorplan image analysis as it provides a richer set of tools for investigating the problem in a more comprehensive manner.},
+}
+
+@inproceedings{knecht2010generating,
+    abstract = {K-dimensional trees, abbreviated as k-d trees in the following, are binary search and partitioning trees that represent a set of n points in a multi-dimensional space. K-d tree data structures have primarily been used for nearest neighbor queries and several other query types, for example in database applications. In the context of a research project at the Bauhaus-University Weimar concerned with the development of a creative evolutionary design method for layout problems in architecture and urban design, spatial partitioning with k-d trees has been applied as a partial solution to generate floor plan layouts. Unlike, for example, packing algorithms and slicing tree structures, the employment of k-d tree algorithms in combination with evolutionary algorithms to generate floor plan layouts has not previously been examined in the scope presented here. In the application developed in this project the k-d tree algorithm is initially used to subdivide a given rectangular area. The dividing lines thereby correspond to eventual spatial boundaries. By combining the k-d tree algorithm with genetic algorithms and evolutionary strategies, layouts can – in the current version - be optimized in three criteria dimensions (size, ratio and topology). Through user interaction the layouts can be dynamically adjusted and altered in real time. The result is a generative mechanism that provides an interesting and promising alternative to existing well-established algorithms for the creative and evolutionary solution of layout problems in architecture and urban design.},
+    booktitle = {GA2010-13th Generative Art Conference, Milan, Italy},
+    title = {Generating floor plan layouts with kd trees and evolutionary algorithms},
+    year = {2010},
+    author = {Knecht, Katja and K{\"o}nig, Reinhard},
+}
+
+@article{lakshmi2017graph,
+    author = {Lakshmi, L and Madhumathi, A and Sindhuja, M},
+    title = {Graph theory and architecture},
+    journal = {MRF Biannual Peer Reviewed International Journal},
+    abstract = {Today, the link between architecture and digital software is so strong; it’s easy to forget that it hasn’t always been this way. Architecture’s reliance on digital design programs has lead to the spread of a homogenous ‘global-style’ architecture — buildings made from the same material, designed by the same methods, using the same software, all over the world. By contrast to this homogeneous global style architecture, this research would provide quite a different approach to architectural design process. This paper presents a research on mathematical models, methods, and techniques for analysis, and evaluation of spatial configurations in architectural and urban design and built forms. In this research, graph theory is used to mathematically model spatial configurations in order to provide intuitive ways of studying and designing spatial arrangements for architects and urban designers and used to mathematically model architectural forms from its evolution. Primarily aims to present possible analytical approaches of graph theory into architectural aspects ranging from urban level planning to neighborhood level planning, site level planning and building level planning aspects. The major areas of graph theory are analyzed analytical and provides varied range of architectural applications and for designing of built forms.},
+    year = {2017},
+}
+
+@inproceedings{lopes2010constrained,
+    title = {A constrained growth method for procedural floor plan generation},
+    booktitle = {Proc. 11th Int. Conf. Intell. Games Simul},
+    pages = {13--20},
+    abstract = {Modern games often feature highly detailed urban environments. However, buildings are typically represented only by their façade, because of the excessive costs it would entail to manually model all interiors. Although automated procedural techniques for building interiors exist, their application is to date limited. One of the reasons for this is because designers have too little control over the resulting room topology. Also, generated floor plans do not always adhere to the necessary consistency constraints, such as reachability and connectivity. In this paper, we propose a novel and flexible technique for generating procedural floor plans subject to user-defined constraints. We demonstrate its versatility, by showing generated floor plans for different classes of buildings, some of which consist of several connected floors. It is concluded that this method results in plausible floor plans, over which a designer has control by defining functional constraints. Furthermore, the method is efficient and easy to implement and integrate into the larger context of procedural modeling of urban environments.},
+    organization = {Citeseer},
+    author = {Lopes, Ricardo and Tutenel, Tim and Smelik, Ruben M and De Kraker, Klaas Jan and Bidarra, Rafael},
+    year = {2010},
+}
+
+@article{lu2021organizational,
+    year = {2021},
+    journal = {International Conference of the Association for Computer-Aided Architectural Design Research in Asia},
+    volume = {1},
+    abstract = {In this paper, a novel synthetic workflow is presented for procedural generation of room relation graphs of floor plans from structured architectural datasets. Different from classical floor plan generation models, which are based on strong heuristics or low-level pixel operations, our method relies on parsing vectorized floor plans to generate their intended organizational graph for further graph-based deep learning. This research work presents the schema for the organizational graphs, describes the generation algorithms, and analyzes its time/space complexity. As a demonstration, a new dataset called CubiGraph5K is presented. This dataset is a collection of graph representations generated by the proposed algorithms, using the floor plans in the popular CubiCasa5K dataset as inputs. The aim of this contribution is to provide a matching dataset that could be used to train neural networks on enhanced floor plan parsing, analysis and generation in future research.},
+    title = {Organizational Graph Generation for Structured Architectural Floor Plan Dataset},
+    pages = {81 - 90},
+    author = {Lu, Yueheng and Tian, Runjia and Li, Ao and Wang, Xiaoshi and Luis Garcia Del Castillo Lopez Jose},
+}
+
+@article{marson2010automatic,
+    publisher = {Hindawi Limited London, UK, United Kingdom},
+    year = {2010},
+    volume = {2010},
+    pages = {1--10},
+    author = {Marson, Fernando and Musse, Soraia Raupp},
+    abstract = {A novel approach to generate house floor plans with semantic information is presented. The basis of this model is the squarified treemaps algorithm. Previously, this algorithm has been used to create graphical representations based on hierarchical information, such as, directory structures and organization structures. Adapted to floor plans generation, this model allows the creation of internal house structures with information about their features and functionalities. The main contributions are related to the robustness, flexibility, and simplicity of the proposed approach to create floor plans in real-time. Results show that diﬀerent and realistic floor plans can be created by adjusting a few parameters.},
+    journal = {International Journal of Computer Games Technology},
+    title = {Automatic real-time generation of floor plans based on squarified treemaps algorithm},
+}
+
+@inproceedings{nagy2017project,
+    year = {2017},
+    pages = {1--8},
+    abstract = {This paper describes a flexible workflow for generative design applied to architectural space planning. We describe this workflow through an application for the design of a new office space. First, we describe a computational design model that can create a variety of office layouts including locating all necessary programs and people using a small set of input parameters. We then describe six unique objectives that evaluate each layout based on architectural performance as well as worker-specific preferences. Finally, we show the use of a multi-objective genetic algorithm (MOGA) to search through the high-dimensional space of all possible designs, and describe several visualization tools that can help a designer to navigate through this design space and choose good designs. We conclude by discussing the future of such computational workflows in design and architecture. Our hope is that they go beyond basic automation to create an expanded role for the human designer and a more dynamic and collaborative interaction between computer design software and human designers in the future.},
+    title = {Project discover: An application of generative design for architectural space planning},
+    booktitle = {Proceedings of the Symposium on Simulation for Architecture and Urban Design},
+    author = {Nagy, Danil and Lau, Damon and Locke, John and Stoddart, Jim and Villaggi, Lorenzo and Wang, Ray and Zhao, Dale and Benjamin, David},
+}
+
+@article{napong2004graph,
+    abstract = {This paper introduces new graph geometric measures and models for architectural planning. Based upon geometrical distance among nodes, the ‘minimum-path graph’ is proposed to analyse all shortest-path traversal from every to every other space in a network. By applying the geometric graph, two spatial models are created in order to represent node’s centrality and edge’s optimal passage capacity. They describe specific values for each individual space with regards to the overall system. The graph geometry primarily aims to assist architect planners to clarify the underlying geometric potential of space with more accuracy. In a near future, it is also hoped that the new geometric measures and models will further deepen, and widen, our planning knowledge for architectural and urban space network.},
+    year = {2004},
+    number = {1},
+    journal = {Journal of Asian Architecture and Building Engineering},
+    title = {The graph geometry for architectural planning},
+    pages = {157--164},
+    volume = {3},
+    publisher = {ARCHITECTURAL INSTITUTE OF JAPAN (AIJ), ARCHITECTURAL INSTITUTE OF KOREA~…},
+    author = {Napong, Nophaket},
+}
+
+@inproceedings{nauata2020house,
+    organization = {Springer},
+    author = {Nauata, Nelson and Chang, Kai-Hung and Cheng, Chin-Yi and Mori, Greg and Furukawa, Yasutaka},
+    abstract = {This paper proposes a novel graph-constrained generative adversarial network, whose generator and discriminator are built upon relational architecture. The main idea is to encode the constraint into the graph structure of its relational networks. We have demonstrated the proposed architecture for a new house layout generation problem, whose task is to take an architectural constraint as a graph (i.e., the number and types of rooms with their spatial adjacency) and produce a set of axis-aligned bounding boxes of rooms. We measure the quality of generated house layouts with the three metrics: the realism, the diversity, and the compatibility with the input graph constraint. Our qualitative and quantitative evaluations over 117,000 real floorplan images demonstrate that the proposed approach outperforms existing methods and baselines. We will publicly share all our code and data.},
+    year = {2020},
+    pages = {162--177},
+    title = {House-gan: Relational generative adversarial networks for graph-constrained house layout generation},
+    booktitle = {Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part I 16},
+}
+
+@inproceedings{nauata2021house,
+    pages = {13632--13641},
+    title = {House-gan++: Generative adversarial layout refinement network towards intelligent computational agent for professional architects},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    abstract = {This paper proposes a novel generative adversarial layout refinement network for automated floorplan generation. Our architecture is an integration of a graph-constrained relational GAN and a conditional GAN, where a previously generated layout becomes the next input constraint, enabling iterative refinement. A surprising discovery of our research is that a simple non-iterative training process, dubbed component-wise GT-conditioning, is effective in learning such a generator. The iterative generator also creates a new opportunity in further improving a metric of choice via meta-optimization techniques by controlling when to pass which input constraints during iterative layout refinement. Our qualitative and quantitative evaluation based on the three standard metrics demonstrate that the proposed system makes significant improvements over the current state-of-the-art, even competitive against the ground-truth floorplans, designed by professional architects.},
+    year = {2021},
+    author = {Nauata, Nelson and Hosseini, Sepidehsadat and Chang, Kai-Hung and Chu, Hang and Cheng, Chin-Yi and Furukawa, Yasutaka},
+}
+
+@inproceedings{newton2019deep,
+    volume = {2},
+    abstract = {The field of generative architectural design has explored a wide range of approaches in the automation of design production, but these approaches have demonstrated limited artificial intelligence. Generative Adversarial Networks (GANs) are a leading deep generative model that use deep neural networks (DNNs) to learn from a set of training examples in order to create new design instances with a degree of flexibility and fidelity that outperform competing generative approaches. Their application to generative tasks in architecture, however, has been limited. This research contributes new knowledge on the use of GANs for architectural plan generation and analysis in relation to the work of specific architects. Specifically, GANs are trained to synthesize architectural plans from the work of the architect Le Corbusier and are used to provide analytic insight. Experiments demonstrate the efficacy of different augmentation techniques that architects can use when working with small datasets.},
+    pages = {21--28},
+    booktitle = {Proceedings of 37th eCAADe and 23rd SIGraDi Conference},
+    title = {Deep generative learning for the generation and analysis of architectural plans with small datasets},
+    author = {Newton, David},
+    year = {2019},
+}
+
+@article{nisztuk2019hybrid,
+    year = {2019},
+    publisher = {SAGE Publications Sage UK: London, England},
+    abstract = {The article presents the application of Hybrid Evolutionary and Greedy-based algorithms to the problem of Automated Floor Plan Generation. The described optimization issue is part of a wider domain of Computer-Aided Architectural Design. The article covers the extensive description of the representation domain model (architectural canonical guidelines, user design requirements and constraints) and the explanation of proposed approach: problem representation, genetic algorithm operators, and fitness function definition. The research experimental procedures are based on real-world data: the architectural design guidelines being the design constraints and five real-world functional programs introduced and proposed as benchmarks. The article summarizes the implementation of the proposed approach, compares the Hybrid Evolutionary Algorithm experimental results with the Greedy-based algorithm, and suggests possible extensions and future research directions.},
+    journal = {International Journal of Architectural Computing},
+    number = {3},
+    volume = {17},
+    author = {Nisztuk, Maciej and Myszkowski, Pawe{\l} B},
+    title = {Hybrid evolutionary algorithm applied to automated floor plan generation},
+    pages = {260--283},
+}
+
+@inproceedings{nisztuk2019tool,
+    title = {Tool for evolutionary aided architectural design. Hybrid Evolutionary Algorithm applied to Multi-Objective Automated Floor Plan Generation},
+    booktitle = {Conference: Ecaade Sigradi 2019 at: Porto, Portugal},
+    author = {Nisztuk, Maciej and Myszkowski, Pawe{\l}},
+    year = {2019},
+    abstract = {The paper presents the ELISi multi-criteria optimisation application for AFPG based on Hybrid Evolutionary Algorithm (HEA). The research aims to create functional computational design tool for architects, mimicking the workflow of architectural design process. The article includes explanation of the proposed approach: problem representation, genetic algorithm operators, fitness functions definitions, post processing operations, software functionalities and workflow as well as achieved architectural results and outline of future research.},
+    volume = {1},
+}
+
+@article{paterson2013real,
+    pages = {79 - 86},
+    abstract = {It has been argued that traditional building simulation methods can be a slow process, which often fails to integrate into the decision making process of non-technical designers, such as architects, at the early design stages. Furthermore, studies have shown that predicted energy consumption of buildings during design is often lower than monitored energy consumption during operation. In view of this, this paper outlines research to create a user friendly design tool that predicts energy consumption in real-time as early design and briefing parameters are altered interactively. As a test case, the research focuses on school design in England. Artificial neural networks (ANNs) were trained to predict the energy consumption of school designs by linking actual heating and electrical energy consumption data from the existing building stock to a range of design and briefing parameters.},
+    volume = {2},
+    title = {Real-time Environmental Feedback at the Early Design Stages},
+    journal = {Simulation, Prediction and Evaluation - Computation and Performance},
+    author = {Paterson, Greig and Hong, Sung Min and Mumovic, D and Kimpian, J},
+    year = {2013},
+}
+
+@article{pena2021artificial,
+    journal = {Automation in Construction},
+    year = {2021},
+    pages = {1-30},
+    title = {Artificial intelligence applied to conceptual design. A review of its use in architecture},
+    abstract = {Conceptual architectural design is a complex process that draws on past experience and creativity to generate new designs. The application of artificial intelligence to this process should not be oriented toward finding a solution in a defined search space since the design requirements are not yet well defined in the conceptual stage. Instead, this process should be considered as an exploration of the requirements, as well as of possible solutions to meet those requirements. This work offers a tour of major research projects that apply artificial intelligence solutions to architectural conceptual design. We examine several approaches, but most of the work focuses on the use of evolutionary computing to perform these tasks. We note a marked increase in the number of papers in recent years, especially since 2015. Most employ evolutionary computing techniques, including cellular automata. Most initial ap­proaches were oriented toward finding innovative and creative forms, while the latest research focuses on optimizing architectural form.},
+    author = {Pena, M Luz Castro and Carballal, Adri{\'a}n and Rodr{\'i}guez-Fern{\'a}ndez, Nereida and Santos, Iria and Romero, Juan},
+    volume = {124},
+    publisher = {Elsevier},
+}
+
+@article{postle2019pattern,
+    volume = {3},
+    title = {On pattern languages, design patterns and evolution},
+    journal = {New Design Ideas},
+    author = {Postle, Bruno},
+    abstract = {Pattern Languages for the built environment and Design Patterns for computer software are closely related fields. This article discusses differences between the two considering the different problem spaces of each. We identify possible reasons for the general acceptance of Design Patterns in computer science and the corresponding lack of acceptance by architects. A novel approach to the design of buildings is proposed using a synthesis of Evolutionary Computing with a Pattern Language as fitness criteria.},
+    year = {2019},
+}
+
+@inproceedings{schaffranek2015parallel,
+    year = {2015},
+    organization = {Space Syntax Laboratory, The Bartlett School of Architecture, UCL},
+    title = {Parallel planning-An experimental study in spectral graph matching},
+    abstract = {A lot of attempts have been made in recent years to generate geometrically correct floor plans, spatial configurations and urban layouts in connection with functional relations and defined spatial properties(Elezkurtaj and Franck, 1999) (Duarte, 2001) (Donath, König and Petzold, 2012) (Nourian, Rezvani and Sariyildiz, 2013).Different heuristics (force based drawing...) / optimisations methods (metaheuristic solvers such as genetic algorithms, simulated annealing...)have been applied to search for the »best« trade of between a set of constraint/properties. Most of these techniques are based on an iterative and time consuming process finding a good solution for one, two, maybe three different constraints/properties. But architecture is related to a multitude of different constraints/properties, which strongly depend on the given task and its context. In image processing spectral graph matching has shown to solve different tasks such as graph drawing, image matching and image segmentation. A direct translation to architecture seems obvious as an image similar to a plan represents a particular spatial embedding of elements (pixels, rooms...) in two-dimensional space. As these problems are described through graphs, which represent the relation of elements rather than a particular spatial embedding, these approaches are applicable not only to a two-dimensional space but also in higher dimensions. With such tools at hand, a prototype of a spatial configuration defined by a graph (functional or through properties such as e.g. integration, choice...) can be applied to an existing configuration (e.g. the refurbishment of existing buildings), to a spatial configuration which is generated by other properties than the prototype (e.g. structural, solar gain...) or to the most generic: A grid, resulting in a possible spatial embedding of the prototype. This allows to unlink functional / configuration lconstraint with other properties (an existing configuration, other configurational constraints/properties such as structural, solar...). Through unlinking, each constraint can be looked at on its own, developed on its own to a wanted solution and than relinked again. Further the process of matching two graphs, based on spectral graph theory, is not based on an iterative process but on one with a fixed computational time. Here the bottleneck is the calculation of the eigenvectors which can be preformed at least in O(n^3).},
+    pages = {151--1},
+    booktitle = {Proceedings of the 10th Space Syntax Symposium: Book of Abstracts},
+    author = {Schaffranek, Richard},
+}
+
+@inproceedings{sebestyen2020machine,
+    booktitle = {Proceedings of the 38th eCAADe Conference},
+    author = {Sebestyen, Adam and Tyc, Jakub},
+    title = {Machine Learning Methods in Energy Simulations for Architects and Designers},
+    abstract = {Application of Machine Learning (ML) in the field of architecture is a worthwhile topic to discuss in the context of digital architecture. Authors propose to extend this discussion, presenting an integrated ML pipeline built with the state-of-the-art data science tools. To investigate the affordances of such pipelines, an ML model being able to predict the environmental metrics of a generalized facade system is created. This approach is valid for arbitrary facades, as long as the proposed design could be discretized in the form analogous to the data generated for the ML model training. The presented experiment evaluates the precision of the sunlight hours and radiation values predictions, aiming at the application in the early design phases. Conducted investigation builds up on the knowledge embedded in the Grasshopper and Ladybug toolsets. Potential application of Convolutional Neural Networks and categorical datasets for classifications tasks to increase the precision of the ML models have been identified. Possibility to extend the approach beyond the workspace of Rhino and Grasshopper is suggested. Further research outlook, investigating the data pattern recognition capabilities in relation to the three-dimensional forms discretized as multidimensional arrays, is stated.},
+    pages = {613--622},
+    year = {2020},
+}
+
+@article{shekhawat2014algorithm,
+    pages = {324--330},
+    abstract = {In most applications, such as urbanism and architecture, randomly utilizing given spaces is certainly not favorable. This study proposes an explicit algorithm for utilizing the given spaces inside a rectangle with satisfactory results. In the literature, connectivity is not considered as a criterion for ﬂoor plan design, but it is deemed essential in architecture. For example, dining rooms are preferably connected to kitchens, toilets should be connected to many rooms, and each bedroom should be separated from the other rooms. This paper describes adjacency among spaces and proves that the obtained rectangular ﬂoor plan is one of the best ones in terms of connectivity. An architectural and mathematical object called extra spaces is introduced by the proposed algorithm and is subsequently examined in this work.},
+    number = {3},
+    publisher = {Elsevier},
+    author = {Shekhawat, Krishnendra},
+    journal = {Frontiers of Architectural Research},
+    title = {Algorithm for constructing an optimally connected rectangular floor plan},
+    volume = {3},
+    year = {2014},
+}
+
+@article{shekhawat2020gplan,
+    author = {Shekhawat, Krishnendra and Upasani, Nitant and Bisht, Sumit and Jain, Rahil},
+    title = {GPLAN: Computer-Generated Dimensioned Floorplans for given Adjacencies},
+    journal = {arXiv preprint arXiv:2008.01803},
+    abstract = {In this paper, we present GPLAN, software aimed at constructing dimensioned floorplan layouts based on graph-theoretical and optimization techniques. GPLAN takes user requirements as input in the following two forms: i. Adjacency graph: It allows user to draw an adjacency graph on a GUI (graphical user interface) corresponding to which GPLAN produces a set of dimensioned floorplans with a rectangular boundary, where each floorplan is topologically distinct from others. ii. Dimensionless layout: Here, user can draw any layout with rectangular or non-rectangular boundary on a GUI and GPLAN transforms it into a dimensioned floorplan while preserving adjacencies, positions, shapes of the rooms. The above approaches represent different ways of inserting adjacencies and GPLAN generate dimensioned floorplans corresponding to the given adjacencies. The larger aim is to provide alternative platforms to user for producing dimensioned floorplans for all given (architectural) constraints, which can be further refined by architects.},
+    year = {2020},
+}
+
+@inproceedings{singh2020applying,
+    volume = {2},
+    year = {2020},
+    title = {Applying Deep Learning and Databases for Energyefficient Architectural Design},
+    organization = {eCAADe (Education and Research in Computer Aided Architectural Design in Europe)},
+    pages = {79--87},
+    author = {Singh, Manav Mahan and Schneider-Marin, Patricia and Harter, Hannes and Werner, Lang and Geyer, Philipp},
+    abstract = {The reduction of energy consumption of buildings requires consideration in early design phases. However, modelling and computation time required for dynamic energy simulations makes them inappropriate in the early phases. This paper presents a performance prediction approach for these phases that is embedded in a multi-level-of-development modelling approach. First, parametric pre-trained modular deep learning components are embedded in the building elements. The energy performance is predicted by composing these components. Second, embodied energy assessment is performed by extracting the information from a database. A calculation module queries the database and calculates the embodied energy. Both, embodied and operational, energy are assembled to predict lifecycle energy demand. The method has been implemented prototypically in a digital modelling environment Revit. A case study serves to demonstrate the application process, the user interaction and the information flows. It shows energy prediction in early design phases to enhance the environmental performance of the building.},
+    booktitle = {Proceedings of the 38th International Online Conference on Education and Research in Computer Aided Architectural Design in Europe},
+}
+
+@inproceedings{son2021framework,
+    pages = {2021--01},
+    author = {Son, Kihoon and Hyun, Kyung Hoon},
+    number = {},
+    title = {A framework for multivariate data based floor plan retrieval and generation},
+    abstract = {Spatial designers explore various design references in the design process. These design references significantly impact the quality of design outcomes and the process. Therefore, it is crucial to provide useful designs through the retrieval or generation process to spatial designers. To do this, a methodology must be developed to identify and quantify the floor plan’s multivariate design data. Through quantifying various design data, the retrieval and generation process can provide appropriate designs in many ways. This study proposed a new floor plan design framework for retrieval and generation with newly quantified design data. For validation of this framework, we conducted a floor plan retrieval and generation process. Newly quantified design data show usability in both processes. We also compare our framework with previous studies for validation. The comparison results show that our framework utilizes the most diverse design data of the floor plan.},
+    volume = {29},
+    booktitle = {26th International Conference of the Association for Computer-Aided Architectural Design Research in Asia: Projections. The Association for Computer-Aided Architectural Design Research in Asia, Hong Kong},
+    year = {2021},
+}
+
+@article{tarabishy2020deep,
+    author = {Tarabishy, Sherif and Psarras, Stamatios and Kosicki, Marcin and Tsigkari, Martha},
+    journal = {International Journal of Architectural Computing},
+    abstract = {Spatial and visual connectivity are important metrics when developing workplace layouts. Calculating those metrics in real-time can be difficult, depending on the size of the floor plan being analysed and the resolution of the analyses. This paper investigates the possibility of considerably speeding up the outcomes of such computationally intensive simulations by using machine learning to create models capable of identifying the spatial and visual connectivity potential of a space. To that end we present the entire process of investigating different machine learning models and a pipeline for training them on such task, from the incorporation of a bespoke spatial and visual connectivity analysis engine through a distributed computation pipeline, to the process of synthesizing training data and evaluating the performance of different neural networks.},
+    number = {1},
+    title = {Deep learning surrogate models for spatial and visual connectivity},
+    year = {2020},
+    publisher = {SAGE Publications Sage UK: London, England},
+    volume = {18},
+    pages = {53--66},
+}
+
+@article{van2004analysis,
+    journal = {Technische Universität München},
+    abstract = {Individual views on a building product of people involved in the design process imply different models for planning and calculation. In order to interpret these geometrical, topological and semantical data of a building model we identify a structural component graph, a graph of room faces, a room graph and a relational object graph as aids and we explain algorithms to derive these relations. The application of the technique presented is demonstrated by the analysis and discretization of a sample model in the scope of building energy simulation.},
+    title = {Analysis of building structure and topology based on graph theory},
+    author = {Van Treeck, Christoph and Rank, Ernst},
+    year = {2004},
+}
+
+@article{varoudis2014beyond,
+    title = {Beyond two dimensions: architecture through three dimensional visibility graph analysis},
+    abstract = {Architecture consists of spatial relations that accommodate functions, afford social relations and create visual interest. Through openings and walls, architects manipulate continuities and discontinuities of visual fields in two and three dimensions. Analytical diagrams and models of these fields have been offered by space syntax, especially through visibility graph analysis (VGA), graphing visual relations in two dimensions. This paper introduces a new approach to VGA that departs from planar restrictions. We show how a graph can be generated of inter-visible locations on a planar surface that incorporates relations among elements in three dimensions. Using this method, we extend the current space syntax analysis of architectural space to a new methodology for diagramming and modelling three-dimensional visual relationships in architecture. The paper is structured in three parts. The first section provides an overview of the principles of visibility analysis using graphs, and explains the method by which visibility relations of ‘accessible’ and ‘inaccessible’ space in two and three dimensions are computed. This leads to a graph representation, which uses a mix of ‘directed’ and ‘undirected’ visibility connections, and a new multi-variant spatial categorisation analysis that informs the properties of multi-directional graphs. The second part of the paper tests the three-dimensional visibility model through the analysis of hypothetical and real spatial environments. The third part analyses Giuseppe Terragni’s Casa del Fascio, describing architectural characteristics that are not captured by two-dimensional analysis, and allowing a comparative understanding of spatial configuration in two and three dimensions. The paper concludes with a discussion about the significance of this new model as an analytical and architectural tool.},
+    author = {Varoudis, Tasos and Psarra, Sophia},
+    pages = {91--108},
+    year = {2014},
+    volume = {5},
+    number = {1},
+    journal = {The Journal of Space Syntax},
+}
+
+@article{velivckovic2023everything,
+    author = {Veličković, Petar},
+    abstract = {In many ways, graphs are the main modality of data we receive from nature. This is due to the fact that most of the patterns we see, both in natural and artificial systems, are elegantly representable using the language of graph structures. Prominent examples include molecules (represented as graphs of atoms and bonds), social networks and transportation networks. This potential has already been seen by key scientific and industrial groups, with already impacted application areas including traffic forecasting, drug discovery, social network analysis and recommender systems. Further, some of the most successful domains of application for machine learning in previous years—images, text and speech processing—can be seen as special cases of graph representation learning, and consequently there has been significant exchange of information between these areas. The main aim of this short survey is to enable the reader to assimilate the key concepts in the area, and position graph representation learning in a proper context with related fields.},
+    title = {Everything is Connected: Graph Neural Networks},
+    year = {2023},
+    journal = {arXiv preprint arXiv:2301.08210},
+}
+
+@article{wang2019dgl,
+    author = {Minjie Wang and Da Zheng and Zihao Ye and Quan Gan and Mufei Li and Xiang Song and Jinjing Zhou and Chao Ma and Lingfan Yu and Yu Gai and Tianjun Xiao and Tong He and George Karypis and Jinyang Li and Zheng Zhang},
+    doi = {},
+    year = {2019},
+    title = {Deep Graph Library: A Graph-Centric, Highly-Performant Package for Graph Neural Networks},
+    note = {},
+    journal = {arXiv preprint arXiv:1909.01315},
+    abstract = {Advancing research in the emerging field of deep graph learning requires new tools to support tensor computation over graphs. In this paper, we present the design principles and implementation of Deep Graph Library (DGL)1 . DGL distills the computational patterns of GNNs into a few generalized sparse tensor operations suitable for extensive parallelization. By advocating graph as the central programming abstraction, DGL can perform optimizations transparently. By cautiously adopting a framework-neutral design, DGL allows users to easily port and leverage the existing components across multiple deep learning frameworks. Our evaluation shows that DGL significantly outperforms other popular GNN-oriented frameworks in both speed and memory consumption over a variety of benchmarks and has little overhead for small scale workloads.},
+}
+
+@article{wang2019orthogonal,
+    year = {2019},
+    abstract = {In this paper, we propose a novel space partitioning strategy for implicit hierarchy visualization such that the new plot not only has a tidy layout similar to the treemap, but also is flexible to data changes similar to the Voronoi treemap. To achieve this, we define a new distance function and neighborhood relationship between sites so that space will be divided by axis-aligned segments. Then a sweepline+skyline based heuristic algorithm is proposed to allocate the partitioned spaces to form an orthogonal Voronoi diagram with orthogonal rectangles. To the best of our knowledge, it is the first time to use a sweepline-based strategy for the Voronoi treemap. Moreover, we design a novel strategy to initialize the diagram status and modify the status update procedure so that the generation of our plot is more effective and efficient. We show that the proposed algorithm has an O(n · log(n)) complexity which is the same as the state-of-the-art Voronoi treemap. To this end, we show via experiments on the artificial dataset and real-world dataset the performance of our algorithm in terms of computation time, converge rate, and aspect ratio. Finally, we discuss the pros and cons of our method and make a conclusion.},
+    journal = {arXiv preprint arXiv:1904.02348},
+    author = {Wang, Yan-Chao and Lin, Feng and Seah, Hock-Soon},
+    title = {Orthogonal voronoi diagram and treemap},
+}
+
+@inproceedings{wang2021room,
+    year = {2021},
+    title = {Room Type Classification for Semantic Enrichment of Building Information Modeling Using Graph Neural Networks},
+    author = {Wang, Zijian and Yeung, Timson and Sacks, Rafael and Su, Zhiya},
+    volume = {2021},
+    abstract = {Although Building Information Modeling (BIM) is widely adopted in the Architecture, Engineering, and Construction (AEC) industry, difficulties in model interoperability remain, hindering domain-specific applications. Semantic enrichment supplements a model's semantic information automatically as an alternative approach to solve the problem. In this research, a part of the EU funded 'Cloud-BIM' project, we applied a novel deep learning technique, graph neural networks (GNNs), to enrich a BIM model, with the goal of testing the applicability of graph representation and the use of GNNs for semantic enrichment. The application scenario concerned classification of room types in apartments. An apartment layout graph dataset containing seven room types and room relationships was compiled from 224 apartment layouts. A high-performance GNN model, GraphSAGE, was selected to train and predict room classes. Despite the small dataset and the sparse relationship features used in the experiment described here, GraphSAGE succeeded in classifying room types with an accuracy of 73\%. This was 12\% higher accuracy than two non-graph machine learning algorithms with which it was compared, and the prediction ability was better balanced. The findings provide clear directions for significantly improving the degree of accuracy by expanding the feature set of both node and edge properties, and this is the subject of ongoing work to refine the use of GNNs for semantic enrichment of BIM models.},
+    pages = {11--15},
+    booktitle = {Proc. of the Conference CIB W78},
+}
+
+@article{wardhana2019spatial,
+    volume = {3},
+    year = {2019},
+    journal = {Design - Algorithmic and Parametric},
+    abstract = {Non-Manifold Topology (NMT) has been previously proven to be an appropriate representation of interconnected architectural and spatial structures. This paper further explores the suitability of NMT for spatial reasoning purposes. A literature survey is done to identify the necessary components of a spatial reasoning framework, and an adaptation of such framework based on NMT is presented. This paper also describes the implementation of an NMT-based spatial reasoning framework, its integration into the Topologic software library which the authors develop, as well as the implementation challenges. Finally, a pathfinding study case on an NMT model, which has been generated from a Building Information Modelling (BIM) structure, is presented and analysed.},
+    title = {A spatial reasoning framework based on non-manifold topology},
+    author = {Wardhana, Nicholas and Jabi, Wassim and Chatzivasileiadi, Aikaterini and Petrova, Nikoleta},
+}
+
+@inproceedings{yousif2021deep,
+    author = {Yousif, S and Bolojan, D and Anastasia, G and Jeroen, A and Adam, F},
+    year = {2021},
+    volume = {1},
+    pages = {151--160},
+    booktitle = {The Association for Computer-Aided Architectural Design Research in Asia (CAADRIA)},
+    title = {Deep-Performance: Incorporating Deep Learning for Automating Building Performance Simulation in Generative Systems},
+    abstract = {In this study, we introduce a newly developed method called Deep-Performance, to enable automatic environmental performance simulation prediction without the need to perform simulations, by integrating deep learning strategies. The aim is to train neural networks on datasets with thousands of building design samples and their corresponding performance simulation. The trained model would offer performance prediction for design options emerging in generative protocols. The research is a work-in-progress within a broader project aimed at automating buildings’ environmental performance evaluations of daylight analysis and energy simulation, using deep learning (DL) models. This paper focuses on the implementation of a supervised DL method for automating the retrieval of daylight analysis metrics, targeting successful daylight design and higher building enclosure efficiency. We have further improved a Pix2Pix model trained on 5 different datasets, each containing 6000 paired images of architectural floor plans and their daylight simulation metrics. In the inference phase, the model was able to accurately predict the daylight simulation for unseen sets of floor plans. For validation, two quantitative assessment metrics were followed to assess the predicted daylight performance against the daylight performance simulation. Both assessment metrics showed high accuracy levels.},
+}
+
+@article{zhang2021dive,
+    journal = {arXiv preprint arXiv:2106.11342},
+    title = {Dive into deep learning},
+    year = {2021},
+    author = {Zhang, Aston and Lipton, Zachary C and Li, Mu and Smola, Alexander J},
+}
+
+@misc{vandromme2009interactive,
+    notes = {The design of floor-plans can leverage machine intuition to generate and qualify potential design options. In this article, we address a specific abstraction of space: adjacency. Any floorplan carries its own embedded logic; in clear, the relative placement of rooms and their connections is driven by a certain logic of interdependence, and yields varying qualities across space. For instance, the presence of a room will condition the existence of other rooms, as well as the position of openings between them. First, we attempt here to qualify adjacencies of existing floorplans, to assess the relevance of adjacencies among rooms. We later turn to Bayesian modeling to generate adjacency graphs, either freely or under set constraints. By qualifying and generating, our hope is to investigate both sides of the same problem: the understanding of relationships among neighboring spaces.},
+    title = {An Interactive System Based on Semantic Graphs},
+    year = {2009},
+    author = {Vandromme, Johann and Degrande, Samuel and Pl{\'e}nacoste, Patricia and Chaillou, Christophe},
+}
+
+@article{lee2017measuring,
+    author = {Lee, Ju Hyun and Ostwald, Michael J and Lee, Hyunsoo},
+    year = {2017},
+    number = {4},
+    abstract = {This paper presents a method that combines visibility graph and isovist analyses to investigate the spatial and social properties of architectural plans for aged care facilities. The potential of the combined method is examined by measuring the properties of three sets of plans for residential aged care facilities. The first set is a pair of hypothetical, idealized plans, which allegedly reﬂect the “best practice” in the industry. The second set comprises a pair of plans for recent Australian designs, and the third set is a pair of plans for South Korean facilities. Results of the computational analysis of these six plans suggest that social and cultural factors may shape the design of aged care settings and partially explain their international differences. The application of this methodological approach contributes to the understanding of the relationship between spaces and their cultural and social properties in the design of aged care facilities.},
+    title = {Measuring the spatial and social characteristics of the architectural plans of aged care facilities},
+    publisher = {Elsevier},
+    journal = {Frontiers of Architectural Research},
+    pages = {431--441},
+    volume = {6},
+}
+
+@article{nourian2016configraphics,
+    author = {Nourian, Pirouz},
+    year = {2016},
+    journal = {Delft University of Technology},
+    abstract = {This dissertation reports a PhD research on mathematical-computational models, methods, and techniques for analysis, synthesis, and evaluation of spatial configurations in architecture and urban design. Spatial configuration is a technical term that refers to the particular way in which a set of spaces are connected to one another as a network. Spatial configuration affects safety, security, and efficiency of functioning of complex buildings by facilitating certain patterns of movement and/or impeding other patterns. In cities and suburban built environments, spatial configuration affects accessibilities and influences travel behavioral patterns, e.g. choosing walking and cycling for short trips instead of travelling by cars. As such, spatial configuration effectively influences the social, economic, and environmental functioning of cities and complex buildings, by conducting human movement patterns. In this research, graph theory is used to mathematically model spatial configurations in order to provide intuitive ways of studying and designing spatial arrangements for architects and urban designers.},
+    title = {Configraphics: Graph theoretical methods for design and analysis of spatial configurations},
+}
+
+@article{earl1979architectural,
+    journal = {Applications of graph theory},
+    publisher = {Academic Press London},
+    year = {1979},
+    title = {Architectural applications of graph theory},
+    author = {Earl, CF and March, LJ},
+    pages = {327--355},
+}
+
+@book{baglivo1983incidence,
+    author = {Baglivo, Jenny A and Graver, Jack E},
+    title = {Incidence and symmetry in design and architecture},
+    year = {1983},
+    publisher = {Cambridge University Press Cambridge},
+}
+
+@misc{li2009design,
+    notes = {This paper introduces a new framework to enable user-friendly space syntax analysis during the initial design stage. It assists designers, without in-depth knowledge on space syntax, to evaluate and compare design outcomes rapidly. The framework is realized by integration between space syntax and building information model in which space topology is autonomously retrieved. A BIM modeler so called ‘ArchiSpace’ has been developed to demonstrate the applicability of the framework to design practice. Our experiment shows that designers can use the modeler to analyze their design alternatives instantly at any moment during the initial design stage. Therefore, users can generate and evaluate their design alternatives simultaneously without distraction and tedious work on the space syntax analysis in detail.},
+    year = {2009},
+    publisher = {13th},
+    author = {Li, Yongzhi and Lertlakkhanakul, Jumphon and Lee, Seongki and Choi, Jinwon},
+    title = {Design with space syntax analysis based on building information model},
+}
+
+@article{thurow2016assisting,
+    title = {Assisting early architectural planning using a geometry-based graph search},
+    abstract = {In early design phases of architecture ideas exist mostly on a vague level concerning the expectations for the building plan and the respective design parameters. One established method is to examine and develop ideas through existing designs, and to use these to clarify design parameters and be further inspired. Thus, the aim is a computer-based system like sketch-based query approach to show similar floor plans using semantic building fingerprints. During the search floor plans are compared in form of graphs, which means that the sketch-based floor plans are converted to graphs together with the existing floor plans. Herewith, a gradual condensation of the request is possible. The entry is condensed continuously through the repetitive process of entry and search. The challenges with this approach lie in the following mathematical model behind similar floor plans, Queries that satisfy complexity of the data and optimal way for the user to engage in search process.},
+    volume = {2},
+    year = {2016},
+    journal = {eCAADe 2016},
+    author = {Thurow, Torsten and Langenhan, Christoph and Petzold, Frank},
+    pages = {199--207},
+}
+
+@article{rogers2022running,
+    year = {2022},
+    pages = {19},
+    title = {Running, Running, Stop},
+    journal = {Legal Depot D/2022/14982/02},
+    author = {Rogers, Scarlet and Rubennach, Tom and Doherty, Ben and Gardner, Nicole and Haeusler, M Hank and Yu, K Daniel},
+    abstract = {Understanding how people circulate in a space is crucial to effective spatial organization. However, while many studies focus on way-finding within environments such as train stations, there are few discussing multi-storey circulation and path-finding within educational institutions. Vertical high schools prefer multiple stairways over elevators, and seek to devote the maximum floor area possible to learning spaces. These considerations impact a student’s ability to quickly traverse multiple floors. In this research, a computational tool is designed to simulate and assess circulation efficiency within a vertical high school with the goal of lightening stairwell congestion and decreasing classroom transit times. Using action research methodology, the research problem was formulated in cooperation with the industry partner, TERROIR, and solved in an iterative manner. As a method to assess spatial circulation performance, principles of graph theory were applied to a simplified navigation mesh derived from the high school’s floor plan and timetable using Grasshopper. The ability to understand the influence of a designer’s decisions on circulation efficiency factors such as travel time and congestion is vital to creating practical and enduring designs that avoid expensive, post-construction building alterations to fix emergent problems—a core contribution of this research. While the simulation designed in this research engages with a vertical high school context, it could be appropriated for other building types, such as offices or shopping centres.},
+}
+
+@article{fuchkina2022space,
+    journal = {Legal Depot D/2022/14982/02},
+    author = {Fuchkina, Ekaterina and Bielik, Martin and Schneider, Sven and Ossenberg-Engels, Tobias and H{\"a}mmerle, Alexander},
+    year = {2022},
+    abstract = {Graph-based representations of functional requirements (adjacencies, bubble diagram) are a common and useful method that supports architects in the conceptual phase of planning. However, the task of specifying the functional requirements through an adjacency graph can be challenging due to a quadratic growth of complexity in relation to the number of spaces. In turn, this increase of complexity challenges the designer searching for solutions that fulfill these functional requirements. There are systems that aim to address the difficulties related to graph-based space allocation. They, for instance, use fuzzy logic to weight the edges of a graph (i.e., specify relations between spaces) and spring systems (Newtonian gravitation model) to visually clarify the resulting proximity of all spaces according to the rules. Nevertheless, the problem of specifying large-scale adjacencies itself is omitted due to the assumption that such matrices are correctly filled in some previous steps. Moreover, the translation of the resulting graph into a spatial configuration is rarely supported. This work addresses these limitations and proposes a set of tools to assist the designer when defining the adjacency requirements and searching for design solutions that fulfill these requirements. Our approach aims to reduce the complexity of the design task by using graph centrality-based design heuristics. We discuss these heuristics and show their application in a scenario where a new spatial program needs to be allocated into an existing building.},
+    title = {Space Matcher},
+    pages = {39},
+}
+
+@inproceedings{eisenstadt2022autocompletion,
+    author = {Eisenstadt, Viktor and Bielski, Jessica and Langenhan, Christoph and Althoff, Klaus-Dieter and Dengel, Andreas},
+    year = {2022},
+    abstract = {This paper presents an approach for AI-based auto-completion of graph-based spatial configurations using deep learning in the form of link prediction through graph neural networks. The main goal of the research presented is to estimate the probability of connections between the rooms of the spatial configuration graph at hand using the available semantic information. In the context of early design stages, deep learning-based prediction of spatial connections helps to make the design process more efficient and sustainable using the past experiences collected in a training dataset. Using the techniques of transfer learning, we adapted methods available in the modern graph-based deep learning frameworks in order to apply them for our autocompletion purposes to suggest possible further design steps. The results of training, testing, and evaluation showed very good results and justified application of these methods.},
+    booktitle = {Education and research in Computer Aided Architectural Design in Europe Conference},
+    title = {Autocompletion of Design Data in Semantic Building Models using Link Prediction and Graph Neural Networks},
+}
+
+@inproceedings{harding2011associative,
+    year = {2011},
+    title = {Associative spatial networks in architectural design: Artificial cognition of space using neural networks with spectral graph theory},
+    abstract = {This paper looks at a new way of incorporating unsupervised neural networks in the design of an architectural system. The approach involves looking the whole lifecycle of a building and its coupling with its environment. It is argued that techniques such as dimensionality reduction are well suited to architectural design problems whereby complex problems are commonplace. An example project is explored, that of a reconfigurable exhibition space where multiple ephemeral exhibitions are housed at any given time. A modified growing neural gas algorithm is employed in order cognize similarities of dynamic spatial arrangements whose nature are not known a priori. By utilizing the machine in combination with user feedback, a coupling between the building system and the users of the space is achieved throughout the whole system life cycle.},
+    booktitle = {Design Computing and Cognition’10},
+    organization = {Springer},
+    pages = {305--323},
+    author = {Harding, John and Derix, Christian},
+}
+
+@inproceedings{nourian2013designing,
+    title = {Designing with Space Syntax: A configurative approach to architectural layout, proposing a computational methodology},
+    organization = {Faculty of Architecture, Delft University of Technology; eCAADe (Education~…},
+    author = {Nourian, Pirouz and Rezvani, Samaneh and Sariyildiz, IS},
+    year = {2013},
+    booktitle = {eCAADe 2013: Computation and Performance--Proceedings of the 31st International Conference on Education and research in Computer Aided Architectural Design in Europe, Delft, The Netherlands, September 18-20, 2013},
+    abstract = {This paper introduces a design methodology and a toolkit developed as a parametric CAD program for configurative design of architectural plan layouts. Using this toolkit, designers can start plan layout process with sketching the way functional spaces need to connect to each other. A tool draws an interactive bubble diagram and a set of tools reveal feasible geometric interpretations of the proposed bubble diagram in terms of plan layout graphs. Offering real-time Space Syntax analyses at the same time, the tools provide feedback on the spatial performance, which is translatable into the likely social performance of the plan layout patterns.},
+}
+
+@inproceedings{abualdenien2021pbg,
+    booktitle = {Proc. of the CIB W78 Conference 2021},
+    author = {Abualdenien, Jimmy and Borrmann, Andr{\'e}},
+    abstract = {Design and detailing decisions result from numerous considerations and boundary conditions. Such decisions highly influence the cost and performance of the final design. Typically, architects and engineers tend to employ their domain knowledge and reuse successful detailing patterns that fulfill the current needs and boundary conditions. Detailing patterns are described through building information and the rationale behind them. This paper presents a Parametric Building Graph (PBG) for capturing detailing patterns. Additionally, it proposes a framework for automatically transferring those patterns to new projects. In more detail, detailing patterns are stored as subgraph templates, and then when detailing a new building, a pattern is matched and replaced across a graph representation of the building using Graph Rewriting Systems (GRS). Finally, the detailed building graph is brought back to the BIM-authoring tool. The paper is concluded with a feasibility study that demonstrates the realization of the proposed approach in a prototype and a use case.},
+    title = {PBG: A parametric building graph capturing and transferring detailing patterns of building models},
+    year = {2021},
+}
+
+@book{chaillou2022artificial,
+    author = {Chaillou, Stanislas},
+    title = {Artificial Intelligence and Architecture: From Research to Practice},
+    year = {2022},
+    publisher = {Birkh{\"a}user},
+}
+
+@inproceedings{zidong2021topological,
+    month = {10},
+    booktitle = {ACADIA},
+    author = {Liu, Zidong},
+    pages = {},
+    year = {2021},
+    abstract = {The paper shares preliminary results of a novel sequential method to expand existing topology-based generative design. The approach is applied to building an interactive community design system based on a mobile interface. In the process of building an interactive design system, one of the core problems is to harness the complex topological network formed by user demands. After decades of graph theory research in architecture, a consensus on self-organized complex networks has emerged. However, how to convert input complex topological data into spatial layouts in generative designs is still a difficult problem worth exploring. The paper proposes a way to simplify the problem: in some cases, the spatial network of buildings can be approximated as a collection of sequences based on circulation analysis. In the process of network serialization, the personalized user demands are transformed into activity patterns and further into serial spaces. This network operation gives architects more room to play with their work. Rather than just designing an algorithm that directly translates users’ demands into shape, architects can be more actively involved in organizing spatial networks by setting up a catalogue of activity patterns of the residents, thus contributing to a certain balance of top-down order and bottom-up richness in the project. The research on data serialization lays a solid foundation for the future exploration of Recurrent Neural Network (RNN) applied to generative design.},
+    title = {Topological Networks Using a Sequential Method Space Structure Simplifcation for Interactive Design},
+}
+
+@inproceedings{shekhawat2019graph,
+    pages = {3--14},
+    author = {Shekhawat, Krishnendra and Duarte, Jos{\'e} P},
+    year = {2019},
+    booktitle = {Computer-Aided Architectural Design." Hello, Culture" 18th International Conference, CAAD Futures 2019, Daejeon, Republic of Korea, June 26--28, 2019, Selected Papers 18},
+    abstract = {Existing floor planning algorithms are mostly limited to rectangular room geometries. This restriction is a significant reason why they are not used much in design practice. To address this issue, we propose an algorithm (based on graph theoretic tools) that generates rectangular and, if required, orthogonal floor plans while satisfying the given adjacency requirements. If a floor plan does not exist for the given adjacency requirements, we introduce circulations within a floor plan to have a required floor plan.},
+    title = {A graph theoretical approach for creating building floor plans},
+    organization = {Springer},
+}
+
+@article{nahar2017applying,
+    title = {Applying graph theory concepts for analyzing BIM models based on IFC standards},
+    year = {2017},
+    journal = {Master's Thesis. Technische Universit{\"a}t Dresden, Dresden, Germany},
+    author = {Nahar, A},
+    abstract = {Labeled property graph models are a suitable way for representing and describing the vast amount of information inside Building Information Models (BIMs). Where graph models can be automatically generated based on data extracted from Industry Foundation Classes (IFC) models. The aim of this master thesis is to study the potential of using graph databases and the concepts of graph theory to manage, visualize and analyze the information inside BIMs. This can be done through for example through applying data retrieval queries, applying pathfinding algorithms and analyzing the complex relationships between the BIM model entities. The IFC data model is used in the present study to build the graph database; therefore, a brief background on IFC data schema architecture is presented to build-up basic understanding on how IFC models are encoded. This is followed by an introduction to graph theory concepts and graph databases, with the aim to investigate the capabilities of graph models in representing complex and rich datasets such as BIM models. The research proposes a generic approach to create two kinds of graph models: (1) IFC Meta Graph (IMG) model based on the IFC EXPRESS schema and (2) IFC Objects Graph (IOG) model based on STEP physical file format. The IFC EXPRESS schema is used as data source to generate the IMG model to graphically represent the IFC classes and the relationships. The IMG model expresses the classes and their attributes as nodes, and the relationships between them as edges. While, the IFC objects model files are used to build the IOG models, where IFC data are extracted through an IFC data model server and then imported into graph database management system (www.neo4j.com). In both cases of graph modeling, there is a need for a third-party system to enable the data transmission process from the IFC schema/models to Neo4j database. Therefore, the IFC data model server www.ifcwebserver.org has been used to generate the graph query statements scripts and extract the IFC data in form of comma-separated values (CSV) data files for exportation into the Neo4j graph database. This is following by application of graph queries and filters to visualize and analyze building information and to explore the capabilities of graph database in answering realistic questions in building projects particularly. And secondly, to provide a tool for a comparison study of different IFC standard releases or different IFC model versions, when a single graph database is used to storage various IFC models. Finally, the graph model is used for indoor navigation applications in buildings using spatial and geometric information extracted from the IFC model.},
+}
+
+@book{wilson1979introduction,
+    publisher = {Pearson Education India},
+    year = {1979},
+    title = {Introduction to graph theory},
+    author = {Wilson, Robin J},
+}
+
+@book{west2001introduction,
+    title = {Introduction to graph theory},
+    publisher = {Prentice hall Upper Saddle River},
+    author = {West, Douglas Brent and others},
+    year = {2001},
+    volume = {2},
+}
+
+@article{kiavarz2021room,
+    year = {2021},
+    title = {Room-based energy demand classification of BIM data using graph supervised learning.},
+    author = {Kiavarz, H and Jadidi, M and Rajabifard, A and Sohn, G},
+    abstract = {Nowadays, cities and buildings are increasingly interconnected with new modern data models like the 3D city model and Building Information Modelling (BIM) for urban management. In the past decades, BIM appears to have been primarily used for visualization. However, BIM has been recently used for a wide range of applications, especially in Building Energy Consumption Estimation (BECE). Despite extensive research, BIM is less used in BECE data-driven approaches due to its complexity in the data model and incompatibility with machine learning algorithms. Therefore, this paper highlights the potential opportunity to apply graph-based learning algorithms (e.g., GraphSAGE) using the enriched semantic, geometry, and room topology information extracted from BIM
+data. The preliminary results are demonstrated a promising avenue for BECE analysis in both pre-construction step (design) and post-construction step like retrofitting processes.},
+    journal = {ISPRS Annals of Photogrammetry, Remote Sensing \& Spatial Information Sciences},
+}
+
+@article{kantor2005tale,
+    title = {A tale of bridges: topology and architecture},
+    abstract = {Topology, as its name indicates, is a (mathematical) way of conceiving of TOPOS: the place, the space, all space, and everything included in it. Jean-Michel Kantor evokes a few examples of forms and spaces which should be stimulating for all those interested in the concept of space, architects in particular. In topology, we no longer distinguish between two figures, two spaces, if you can pass from one to the other by means of a continuous
+deformation – with neither leap nor cut. Knots are a simple way of escaping from the obtuseness of space. Modern techniques of visualization developed for the military or for the Hollywood studios of Lucas Films can integrate the deformations on computer screens: the continued deformations of surfaces are discretized, that is, they are replaced by approximations produced at fixed intervals, then filmed in video. The time of the virtual corresponds to the era of topology, and architects are finding inspiration there.},
+    volume = {7},
+    year = {2005},
+    author = {Kantor, Jean-Michel},
+    pages = {13--21},
+    journal = {Nexus Network Journal},
+    publisher = {Springer},
+}
+
+@article{lojanica12018topological,
+    year = {2018},
+    abstract = {Continuing a chronological line of mutual influences of architecture and geometry, where geometry is perceived as an inextricable part of the syntax of architectural space, this paper focuses on the clarification of a specific position which mathematical topology takes within contemporary architectural discourse. The understanding of topology within architectural design process is based on the mathematical theoretical framework in which the term of continuous deformation of geometric shapes is specified, whose subsequent occurrence in architectural creative work is linked to the increasing use of digital tools in design process and the shift of the dominant philosophical influences in architectural theoretical research. In order to completely perceive the topological method, the theoretical framework ranges between the area of architectural theory of form and architectural design theory, firstly through the explanation of three basic design principles of topological method: deformability, openness and continuity, and secondly through the representation of the models through which the principles occur in the architectural design process. The first part of this work will introduce and analyse the transition of concepts of deformability, openness and continuity, from mathematical topology through philosophy to architecture emphasizing the computational shift in architectural design, while the second part of the work will explain the modalities through which the principles are applied in several architectural design practices. Generally, the paper is conducted in order to determine whether the development of the topological method, as a creative tendency, resulted in forming a unique design strategy due to transformations and adaptations through some authorial design approaches. The topological method design strategy, which involves a complete design approach, is identified as a result of an in-depth research of distinguished methods through three case studies, taking into consideration the complexity of topology within the mathematical area and a complex
+transition towards the area of architectural theory. The final question returns to the primarily theoretical framework, seeking to set operating platform for development and use of three strategic principles, which simultaneously indicate the possible directions of future development.},
+    author = {Lojanica, Vladimir and Dragisic, Maja},
+    journal = {ICCM},
+    title = {The topological principles in the contemporary architectural design process},
+}
+
+@article{muslimin2023experience,
+    author = {Muslimin, Rizal},
+    publisher = {MDPI},
+    volume = {13},
+    abstract = {This paper presents a method to synthesise functional relationships and spatial configuration simultaneously using shape and graph computation from shape grammar and space syntax theories. The study revisits seminal works and summarises the compatibilities between shape and graph computation as a set of rules. The rule computation is demonstrated in two cases from hospitality and retail, where current applications, opportunities, and limitations are discussed. The results
+from the study show that incorporating graph and shape rules allows sequences of functions and spatial arrangements to be developed in parallel. The method could help the designer anticipate the impact on the users’ flow of activities more explicitly during the early design process and could also assist in generating new functional configurations to provide alternative spatial strategies in broader applications.},
+    pages = {869},
+    journal = {Buildings},
+    year = {2023},
+    number = {4},
+    title = {Experience Grammar: Creative Space Planning with Generative Graph and Shape for Early Design Stage},
+}
+
+@incollection{hong2022five,
+    pages = {191--207},
+    abstract = {Shape grammar interpreters have been studied for more than forty years addressing several areas of design research including architectural, engineering, and product design. At the core of all these implementations, the operation of embedding – the ability of a shape grammar interpreter to search for subshapes in a geometry model even if they are not explicitly encoded in the database of the system – resists a general solution. Here, a detailed account on various constructions of embedding is provided, including determinate and indeterminate ones, to give a sense of the rising complexity of their im-
+plementation in a shape grammar interpreter, and to provide a visual map of the work accomplished in the field so far, and the work ahead too.},
+    title = {Five criteria for shape grammar interpreters},
+    year = {2022},
+    booktitle = {Design Computing and Cognition’20},
+    author = {Hong, Tzu-Chieh Kurt and Economou, Athanassios},
+    publisher = {Springer},
+}
+
+@article{2020SciPy-NMeth,
+    year = {2020},
+    journal = {Nature Methods},
+    doi = {10.1038/s41592-019-0686-2},
+    title = {SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python},
+    author = {Virtanen, Pauli and Gommers, Ralf and Oliphant, Travis E. and Haberland, Matt and Reddy, Tyler and Cournapeau, David and Burovski, Evgeni and Peterson, Pearu and Weckesser, Warren and Bright, Jonathan and {van der Walt}, St{\'e}fan J. and Brett, Matthew and Wilson, Joshua and Millman, K. Jarrod and Mayorov, Nikolay and Nelson, Andrew R. J. and Jones, Eric and Kern, Robert and Larson, Eric and Carey, C J and Polat, {\.I}lhan and Feng, Yu and Moore, Eric W. and {VanderPlas}, Jake and Laxalde, Denis and Perktold, Josef and Cimrman, Robert and Henriksen, Ian and Quintero, E. A. and Harris, Charles R. and Archibald, Anne M. and Ribeiro, Ant{\^o}nio H. and Pedregosa, Fabian and {van Mulbregt}, Paul and {SciPy 1.0 Contributors}},
+    volume = {17},
+    adsurl = {https://rdcu.be/b08Wh},
+    pages = {261--272},
+}
+
+@incollection{NEURIPS2019_9015,
+    pages = {8024--8035},
+    title = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+    booktitle = {Advances in Neural Information Processing Systems 32},
+    url = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf},
+    author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+    publisher = {Curran Associates, Inc.},
+    year = {2019},
+}
+
+@article{2020NumPy-Array,
+    doi = {10.1038/s41586-020-2649-2},
+    journal = {Nature},
+    author = {Harris, Charles R. and Millman, K. Jarrod and van der Walt, Stéfan J and Gommers, Ralf and Virtanen, Pauli and Cournapeau, David and Wieser, Eric and Taylor, Julian and Berg, Sebastian and Smith, Nathaniel J. and Kern, Robert and Picus, Matti and Hoyer, Stephan and van Kerkwijk, Marten H. and Brett, Matthew and Haldane, Allan and Fernández del Río, Jaime and Wiebe, Mark and Peterson, Pearu and Gérard-Marchant, Pierre and Sheppard, Kevin and Reddy, Tyler and Weckesser, Warren and Abbasi, Hameer and Gohlke, Christoph and Oliphant, Travis E.},
+    year = {2020},
+    volume = {585},
+    pages = {357–362},
+    title = {Array programming with {NumPy}},
+}
+
+@article{dawes2021examining,
+    pages = {467--482},
+    abstract = {Andrea Palladio’s Renaissance villas are amongst the most famous and widely stud-
+ied examples of domestic architecture ever produced. The majority of past research about Palladio’s architecture employed historical, mathematical and computational methods to analyse their complex proportional systems and rules. In contrast, this paper examines three of Palladio’s arguments about his villas plans which relate to their spatial properties and topological connections. Specifically, this paper uses a computational method - the justified plan graph(JPG) - to test two arguments about the location and significance of the primary salon on the plan, and a third about the extent to which the rooms in Palladio’s plans are, as he claims, flexible enough to contain alternative functions. Using ten of Palladio’s piano nobile (main floor) plans from I Quattro Libri Dell’Architettura as cases, this paper develops mathematical data to test three hypotheses framed around Palladio’s plans and theories.},
+    year = {2021},
+    journal = {Frontiers of Architectural Research},
+    number = {3},
+    publisher = {Elsevier},
+    author = {Dawes, Michael J and Ostwald, Michael J and Lee, Ju Hyun},
+    volume = {10},
+    title = {Examining control, centrality and flexibility in Palladio's villa plans using space syntax measurements},
+}
+
+@article{schultz2011toward,
+    year = {2011},
+    publisher = {Copernicus GmbH},
+    volume = {38},
+    title = {Toward accessing spatial structure from building information models},
+    pages = {25--30},
+    journal = {The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences},
+    author = {Schultz, Carl and Bhatt, Mehul},
+    abstract = {Data about building designs and layouts is becoming increasingly more readily available. In the near future, service personal (such as maintenance staff or emergency rescue workers) arriving at a building site will have immediate real-time access to enormous amounts of data relating to structural properties, utilities, materials, temperature, and so on. The critical problem for users is the taxing and error prone task of interpreting such a large body of facts in order to extract salient information. This is necessary for comprehending a situation and deciding on a plan of action, and is a particularly serious issue in time-critical and safety-critical activities such as firefighting. Current unifying building models such as the Industry Foundation Classes (IFC), while being comprehensive, do not directly provide data structures that focus on spatial reasoning and spatial modalities that are required for high-level analytical tasks. The aim of the research presented in this paper is to provide computational tools for higher level querying and reasoning that shift the cognitive burden of dealing with enormous amounts of data away from the user. The user can then spend more energy and time in planning and decision making in order to accomplish the tasks at hand. We present an overview of our framework that provides users with an enhanced model of “built-up space”. In order to test our approach using realistic design data (in terms of both scale and the nature of the building models) we describe how our system interfaces with IFC, and we conduct timing experiments to determine the practicality of our approach. We discuss general computational approaches for deriving higher-level spatial modalities by focusing on the example of route graphs. Finally, we present a firefighting scenario with alternative route graphs to motivate the application of our framework.},
+}
+
+@article{ali2023architectural,
+    author = {Ali, Tarique},
+    title = {Architectural Pipeline: An experiment into the role of topological graphs in the early stages of architectural design in the era of machine learning},
+    abstract = {The realm of architectural design and conceptualization, despite witnessing advancements in design complexity facilitated by technological tools and fabrication techniques, appears to have experienced limited transformative change over time in the way we begin our design process. But is there an alternative way to look at architecture? Perhaps a completely different way to begin a project ? Can the age of data abundance cause a shift in the way we look at architectural design ?},
+    year = {2023},
+}
+
+@article{scikit-learn,
+    title = {Scikit-learn: Machine Learning in {P}ython},
+    pages = {2825--2830},
+    year = {2011},
+    author = {Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+    volume = {12},
+    journal = {Journal of Machine Learning Research},
+}
+
+@inproceedings{mckinney-proc-scipy-2010,
+    pages = {56 - 61},
+    author = {Wes McKinney},
+    editor = {{S}t\'efan van der {W}alt and {J}arrod {M}illman},
+    booktitle = {Proceedings of the 9th Python in Science Conference},
+    year = {2010},
+    title = {Data Structures for Statistical Computing in Python},
+    doi = {10.25080/Majora-92bf1922-00a},
+}
+
+@manual{blender,
+    url = {http://www.blender.org},
+    author = {Blender Online Community},
+    address = {Stichting Blender Foundation, Amsterdam},
+    year = {2018},
+    title = {Blender - a 3D modelling and rendering package},
+    organization = {Blender Foundation},
+}
+
+@phdthesis{rycroft2007multiscale,
+    school = {Massachusetts Institute of Technology, Department of Mathematics},
+    title = {Multiscale modeling in granular flow},
+    author = {Rycroft, Christopher Harley},
+    year = {2007},
+}
+
+@article{sanchez2021gentle,
+    number = {9},
+    pages = {e33},
+    journal = {Distill},
+    year = {2021},
+    title = {A gentle introduction to graph neural networks},
+    author = {Sanchez-Lengeling, Benjamin and Reif, Emily and Pearce, Adam and Wiltschko, Alexander B},
+    volume = {6},
+}
+
+@book{kelley1955general,
+    publisher = {Courier Dover Publications},
+    author = {Kelley, John L},
+    title = {General topology},
+    year = {1955},
+}
+
+@article{an2021modified,
+    volume = {397},
+    abstract = {Graham’s convex hull algorithm outperforms the others on those distributions where most
+of the points are on or near the boundary of the hull (Allison and Noga, 1984). To use this
+algorithm for ﬁnding an orthogonal convex hull of a ﬁnite planar point set, we introduce
+the concept of extreme points of a connected orthogonal convex hull of the set, and show
+that these points belong to the set. Then we prove that the connected orthogonal convex
+hull of a ﬁnite set of points is an orthogonal (x, y)-polygon where its convex vertices are
+its connected orthogonal convex hull’s extreme points. As a result, an eﬃcient algorithm,
+based on the idea of Graham’s convex hull algorithm, for ﬁnding the connected orthogonal
+convex hull of a ﬁnite planar point set is presented. We also show that the lower bound
+of computational complexity of such algorithms is O(n log n ). Some numerical results for
+ﬁnding the connected orthogonal convex hulls of random sets are given.},
+    author = {An, Phan Thanh and Huyen, Phong Thi Thu and Le, Nguyen Thi},
+    pages = {125-134},
+    publisher = {Elsevier},
+    year = {2021},
+    title = {A modified Graham’s convex hull algorithm for finding the connected orthogonal convex hull of a finite planar point set},
+    journal = {Applied Mathematics and Computation},
+}
+
+@inproceedings{slyadnev2017cad,
+    title = {CAD model inspection utility and prototyping framework based on OpenCascade},
+    year = {2017},
+    author = {Slyadnev, S and Malyshev, A and Turlapov, V},
+    booktitle = {Conference Paper: GraphiCon},
+}
+
+@misc{sverchok2013,
+    howpublished = {https://github.com/nortikin/sverchok},
+    title = {Sverchok},
+    author = {Nortikin},
+    year = {2013},
+}
+
+@article{guglielmetti2011openstudio,
+    year = {2011},
+    author = {Guglielmetti, Rob and Macumber, Dan and Long, Nicholas},
+    title = {OpenStudio: an open source integrated analysis platform},
+}
+
+@article{crawley2001energyplus,
+    pages = {319--331},
+    publisher = {Elsevier},
+    title = {EnergyPlus: creating a new-generation building energy simulation program},
+    volume = {33},
+    number = {4},
+    author = {Crawley, Drury B and Lawrie, Linda K and Winkelmann, Frederick C and Buhl, Walter F and Huang, Y Joe and Pedersen, Curtis O and Strand, Richard K and Liesen, Richard J and Fisher, Daniel E and Witte, Michael J and others},
+    journal = {Energy and buildings},
+    year = {2001},
+}
+
+@book{jabi2013parametric,
+    publisher = {Hachette UK},
+    year = {2013},
+    title = {Parametric design for architecture},
+    author = {Jabi, Wassim},
+}
+
+@misc{osarch2020,
+    howpublished = {https://community.osarch.org/},
+    title = {OSArch Community},
+    year = {2020},
+    author = {Moult, Dion},
+}
+
+@article{ruiz2013design,
+    journal = {Advanced Engineering Informatics},
+    volume = {27},
+    author = {Ruiz-Montiel, Manuela and Boned, Javier and Gavilanes, Juan and Jim{\'e}nez, Eduardo and Mandow, Lawrence and P{\'e}Rez-De-La-Cruz, Jos{\'e}-Luis},
+    pages = {230--245},
+    publisher = {Elsevier},
+    title = {Design with shape grammars and reinforcement learning},
+    year = {2013},
+    number = {2},
+}
+
+@incollection{nagy2021ai,
+    publisher = {Routledge},
+    year = {2021},
+    pages = {160--181},
+    author = {Nagy, Danil},
+    title = {AI in space planning},
+    booktitle = {The Routledge Companion to Artificial Intelligence in Architecture},
+}
+
+@inproceedings{chen2022ro,
+    title = {Robust Attributed Adjacency Graph Extraction Using Floor Plan Images},
+    year = {2022},
+    pages = {},
+    doi = {10.52842/conf.caadria.2022.2.385},
+    month = {04},
+    author = {Chen, Jielin and Stouffs, Rudi},
+}

@@ -1,0 +1,10 @@
+/code/energy/openstudio
+/code/energy/__pycache__
+/code/generation/__pycache__
+/code/generation/algorithms/__pycache__
+/code/graph/data
+/code/data_manipulation.ipynb
+/code/notebook.ipynb
+/code/.ipynb_checkpoints
+/code/graph/__pycache__
+/documentation/assets
